@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顏文個字</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="KaomojiProject_Img/KaomojiProject_Favicon.png" />
+    <link rel="stylesheet" href="CSSReset.css">
+    <link rel="stylesheet" href="KaomojiProject.css">
+    <script src="KaomojiProject.js"></script>
+</head>
+
+<body>
+    <script src="clipboard.js-master/dist/clipboard.min.js"></script>
+    <script>new ClipboardJS('.kaomojibutton');</script>
+    <script>new ClipboardJS('#copyinput');</script>
+    <div id="sidebar">
+        <div id="logo">
+            <img src="KaomojiProject_Img/KaomojiProject_LOGO.svg" alt="KaomojiProjectLOGO">
+        </div>
+        <h1>顏文個字</h1>
+        <div id="description">直接點擊顏文字即可複製</div>
+        <div id="inputarea">
+            <div id="inputdescription">可使用下方的輸入框<br>客製成自己喜歡的顏文字</div>
+            <input type="text" id="inputtext" placeholder="點擊進行輸入">
+            <button id="copyinput" data-clipboard-target="#inputtext">複製文字框內容</button>
+        </div>
+        <div id="snackbar">已複製！</div>
+    </div>
+    <div id="buttonarea">
+        <div id="categorybuttonarea">
+            <button id="categorybutton-all">全部</button>
+            <button id="categorybutton-happy">愉悅／鬥志</button>
+            <button id="categorybutton-surprised">驚訝／傻眼</button>
+            <button id="categorybutton-angry">平靜／生氣</button>
+            <button id="categorybutton-sad">無奈／委屈</button>
+            <button id="categorybutton-action">吃／睡／雙人／非人</button>
+        </div>
+        <div id="kaomojibuttonarea-all">
+            <button class="kaomojibutton" data-clipboard-text="･ᴗ･">･ᴗ･</button>
+            <button class="kaomojibutton" data-clipboard-text="(°∀°)">(°∀°)</button>
+            <button class="kaomojibutton" data-clipboard-text="ヽ(́◕◞౪◟◕‵)ﾉ">ヽ(́◕◞౪◟◕‵)ﾉ</button>
+            <button class="kaomojibutton" data-clipboard-text="(((o(*ﾟ▽ﾟ*)o)))">(((o(*ﾟ▽ﾟ*)o)))</button>
+            <button class="kaomojibutton" data-clipboard-text="(๑˃ᴗ˂)و">(๑˃ᴗ˂)و</button>
+            <button class="kaomojibutton" data-clipboard-text="( ´ ▽ ` )b">( ´ ▽ ` )b</button>
+            <button class="kaomojibutton" data-clipboard-text="(´∩ω∩｀)">(´∩ω∩｀)</button>
+            <button class="kaomojibutton" data-clipboard-text="( / Д  \  )">( / Д \ )</button>
+            <button class="kaomojibutton" data-clipboard-text="¯\_(ツ)_/¯">¯\_(ツ)_/¯</button>
+            <button class="kaomojibutton" data-clipboard-text="Σ(°口° )">Σ(°口° )</button>
+            <button class="kaomojibutton" data-clipboard-text="(ﾟдﾟ≡ﾟдﾟ)">(ﾟдﾟ≡ﾟдﾟ)</button>
+            <button class="kaomojibutton" data-clipboard-text="(」ﾟﾛﾟ)｣">(」ﾟﾛﾟ)｣</button>
+            <button class="kaomojibutton" data-clipboard-text="Σ(°∀°ﾉ)ﾉ">Σ(°∀°ﾉ)ﾉ</button>
+            <button class="kaomojibutton" data-clipboard-text="Σ(￣。￣ﾉ)ﾉ">Σ(￣。￣ﾉ)ﾉ</button>
+            <button class="kaomojibutton" data-clipboard-text="Σ(=口=ﾉ)ﾉ">Σ(=口=ﾉ)ﾉ</button>
+            <button class="kaomojibutton" data-clipboard-text="(灬ºωº灬)">(灬ºωº灬)</button>
+            <button class="kaomojibutton" data-clipboard-text="( ˘•ω•˘ )">( ˘•ω•˘ )</button>
+            <button class="kaomojibutton" data-clipboard-text="(ㆆᴗㆆ)">(ㆆᴗㆆ)</button>
+            <button class="kaomojibutton" data-clipboard-text="( •᷄ὤ•᷅)">( •᷄ὤ•᷅)</button>
+            <button class="kaomojibutton" data-clipboard-text="(꒪ꇴ꒪;)">(꒪ꇴ꒪;)</button>
+            <button class="kaomojibutton" data-clipboard-text="( ⌓̈ )">( ⌓̈ )</button>
+            <button class="kaomojibutton" data-clipboard-text="(ㆆωㆆ)">(ㆆωㆆ)</button>
+            <button class="kaomojibutton" data-clipboard-text="꒪ω꒪">꒪ω꒪</button>
+            <button class="kaomojibutton" data-clipboard-text="（¯﹃¯）">（¯﹃¯）</button>
+            <button class="kaomojibutton" data-clipboard-text="( -᷅_-᷄ )">( -᷅_-᷄ )</button>
+            <button class="kaomojibutton" data-clipboard-text="ಠ_ಠ">ಠ_ಠ</button>
+            <button class="kaomojibutton" data-clipboard-text="٩(๑`^´๑)۶">٩(๑`^´๑)۶</button>
+            <button class="kaomojibutton" data-clipboard-text="٩(๑`н´๑)۶">٩(๑`н´๑)۶</button>
+            <button class="kaomojibutton" data-clipboard-text="(｀Д´)">(｀Д´)</button>
+            <button class="kaomojibutton" data-clipboard-text="ι(｀ロ´)ノ">ι(｀ロ´)ノ</button>
+            <button class="kaomojibutton" data-clipboard-text="(╯°□°）╯︵ ┻━┻">(╯°□°）╯︵ ┻━┻</button>
+            <button class="kaomojibutton" data-clipboard-text="(ノ°▽°)ノ">(ノ°▽°)ノ</button>
+            <button class="kaomojibutton" data-clipboard-text="(´-ωก`)">(´-ωก`)</button>
+            <button class="kaomojibutton" data-clipboard-text="( ˘ ³˘)♥">( ˘ ³˘)♥</button>
+            <button class="kaomojibutton" data-clipboard-text="(ꈍᴗꈍ)">(ꈍᴗꈍ)</button>
+            <button class="kaomojibutton" data-clipboard-text="（Φ ω Φ）">（Φ ω Φ）</button>
+            <button class="kaomojibutton" data-clipboard-text="ᕕ( ᐛ )ᕗ">ᕕ( ᐛ )ᕗ</button>
+            <button class="kaomojibutton" data-clipboard-text="(´≖◞౪◟≖)">(´≖◞౪◟≖)</button>
+            <button class="kaomojibutton" data-clipboard-text="(́=◞౪◟=‵)">(́=◞౪◟=‵)</button>
+            <button class="kaomojibutton" data-clipboard-text="(๑´ㅂ`๑)">(๑´ㅂ`๑)</button>
+            <button class="kaomojibutton" data-clipboard-text="(ㅅ˘ㅂ˘)">(ㅅ˘ㅂ˘)</button>
+            <button class="kaomojibutton" data-clipboard-text="_(¦3」∠)_">_(¦3」∠)_</button>
+            <button class="kaomojibutton" data-clipboard-text="(๑´ㅁ`)">(๑´ㅁ`)</button>
+            <button class="kaomojibutton" data-clipboard-text="( • ̀ω•́ )">( • ̀ω•́ )</button>
+            <button class="kaomojibutton" data-clipboard-text="(๑•̀ㅂ•́)و✧">(๑•̀ㅂ•́)و✧</button>
+            <button class="kaomojibutton" data-clipboard-text="(◍•ᴗ•◍)">(◍•ᴗ•◍)</button>
+            <button class="kaomojibutton" data-clipboard-text="(・ω・)">(・ω・)</button>
+            <button class="kaomojibutton" data-clipboard-text="ಥ_ಥ">ಥ_ಥ</button>
+            <button class="kaomojibutton" data-clipboard-text="ಠ౪ಠ">ಠ౪ಠ</button>
+            <button class="kaomojibutton" data-clipboard-text="ﾚ(ﾟ∀ﾟ;)ﾍ">ﾚ(ﾟ∀ﾟ;)ﾍ</button>
+            <button class="kaomojibutton" data-clipboard-text="ﾍ( ﾟ∀ﾟ;)ﾉ">ﾍ( ﾟ∀ﾟ;)ﾉ</button>
+            <button class="kaomojibutton" data-clipboard-text="(ﾟ∀。)">(ﾟ∀。)</button>
+            <button class="kaomojibutton" data-clipboard-text="σ ﾟ∀ ﾟ) ﾟ∀ﾟ)σ">σ ﾟ∀ ﾟ) ﾟ∀ﾟ)σ</button>
+            <button class="kaomojibutton" data-clipboard-text="｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡">｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡</button>
+            <button class="kaomojibutton" data-clipboard-text="(´～`)">(´～`)</button>
+            <button class="kaomojibutton" data-clipboard-text="( ´_>`)">( ´_>`)</button>
+            <button class="kaomojibutton" data-clipboard-text="(・ε・)">(・ε・)</button>
+            <button class="kaomojibutton" data-clipboard-text="(*ﾟーﾟ)">(*ﾟーﾟ)</button>
+            <button class="kaomojibutton" data-clipboard-text="(≖ᴗ≖๑)">(≖ᴗ≖๑)</button>
+            <button class="kaomojibutton" data-clipboard-text="(•ㅂ•)/">(•ㅂ•)/</button>
+            <button class="kaomojibutton" data-clipboard-text="(っ´ω`c)">(っ´ω`c)</button>
+            <button class="kaomojibutton" data-clipboard-text="_(:3 」∠ )_">_(:3 」∠ )_</button>
+            <button class="kaomojibutton" data-clipboard-text="(o´罒`o)">(o´罒`o)</button>
+            <button class="kaomojibutton" data-clipboard-text="ヽ( ° ▽°)ノ">ヽ( ° ▽°)ノ</button>
+            <button class="kaomojibutton" data-clipboard-text="(・∀・)">(・∀・)</button>
+            <button class="kaomojibutton" data-clipboard-text="(・ω・)">(・ω・)</button>
+            <button class="kaomojibutton" data-clipboard-text="・゜・(PД`q｡)・゜・">・゜・(PД`q｡)・゜・</button>
+            <button class="kaomojibutton" data-clipboard-text="╮(╯_╰)╭">╮(╯_╰)╭</button>
+            <button class="kaomojibutton" data-clipboard-text="(๑•́ ₃ •̀๑)">(๑•́ ₃ •̀๑)</button>
+            <button class="kaomojibutton" data-clipboard-text="_(┐「ε:)_">_(┐「ε:)_</button>
+            <button class="kaomojibutton" data-clipboard-text="┐(´д`)┌">┐(´д`)┌</button>
+            <button class="kaomojibutton" data-clipboard-text="( º﹃º )">( º﹃º )</button>
+            <button class="kaomojibutton" data-clipboard-text="┳━┳ノ( ' - 'ノ)">┳━┳ノ( ' - 'ノ)</button>
+            <button class="kaomojibutton" data-clipboard-text="(｡-_-｡)">(｡-_-｡)</button>
+            <button class="kaomojibutton" data-clipboard-text="( ¯•ω•¯ )">( ¯•ω•¯ )</button>
+            <button class="kaomojibutton" data-clipboard-text="⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄">⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄</button>
+            <button class="kaomojibutton" data-clipboard-text="(๑´ڡ`๑)">(๑´ڡ`๑)</button>
+            <button class="kaomojibutton" data-clipboard-text="ヽ(#`Д´)ﾉ">ヽ(#`Д´)ﾉ</button>
+            <button class="kaomojibutton" data-clipboard-text="∠( ᐛ 」∠)_">∠( ᐛ 」∠)_</button>
+            <button class="kaomojibutton" data-clipboard-text="(ಠ益ಠ)">(ಠ益ಠ)</button>
+            <button class="kaomojibutton" data-clipboard-text="ヽ(`Д´)ノ">ヽ(`Д´)ノ</button>
+            <button class="kaomojibutton" data-clipboard-text="(☉д⊙)">(☉д⊙)</button>
+            <button class="kaomojibutton" data-clipboard-text="( º△º )">( º△º )</button>
+            <button class="kaomojibutton" data-clipboard-text="(*´∀｀*)人(*´∀｀*)">(*´∀｀*)人(*´∀｀*)</button>
+            <button class="kaomojibutton" data-clipboard-text="(º⊖º)">(º⊖º)</button>
+            <button class="kaomojibutton" data-clipboard-text="Σヽ(ﾟД ﾟ; )ﾉ">Σヽ(ﾟД ﾟ; )ﾉ</button>
+            <button class="kaomojibutton" data-clipboard-text="(ﾟдﾟ)">(ﾟдﾟ)</button>
+            <button class="kaomojibutton" data-clipboard-text="(｢･ω･)｢">(｢･ω･)｢</button>
+            <button class="kaomojibutton" data-clipboard-text="(´;ω;`)ヾ(･∀･`)">(´;ω;`)ヾ(･∀･`)</button>
+            <button class="kaomojibutton" data-clipboard-text="◝(　ﾟ∀ ﾟ )◟">◝(　ﾟ∀ ﾟ )◟</button>
+            <button class="kaomojibutton" data-clipboard-text="( ´･･)ﾉ(._.`)">( ´･･)ﾉ(._.`)</button>
+            <button class="kaomojibutton" data-clipboard-text="(｡ŏ_ŏ)">(｡ŏ_ŏ)</button>
+            <button class="kaomojibutton" data-clipboard-text="(つ´ω`)つ">(つ´ω`)つ</button>
+            <button class="kaomojibutton" data-clipboard-text="(눈‸눈)">(눈‸눈)</button>
+            <button class="kaomojibutton" data-clipboard-text="(  ´・◡・｀)">( ´・◡・｀)</button>
+            <button class="kaomojibutton" data-clipboard-text="ㅍ_ㅍ">ㅍ_ㅍ</button>
+            <button class="kaomojibutton" data-clipboard-text="(°ཀ°)">(°ཀ°)</button>
+            <button class="kaomojibutton" data-clipboard-text="(◞‸◟)">(◞‸◟)</button>
+            <button class="kaomojibutton" data-clipboard-text="(´Ａ｀)">(´Ａ｀)</button>
+            <button class="kaomojibutton" data-clipboard-text="( ×ω× )">( ×ω× )</button>
+            <button class="kaomojibutton" data-clipboard-text="(☍﹏⁰)">(☍﹏⁰)</button>
+            <button class="kaomojibutton" data-clipboard-text="(=´ᴥ`)">(=´ᴥ`)</button>
+            <button class="kaomojibutton" data-clipboard-text="(ง๑ •̀_•́)ง">(ง๑ •̀_•́)ง</button>
+            <button class="kaomojibutton" data-clipboard-text="(´-ω-｀)">(´-ω-｀)</button>
+            <button class="kaomojibutton" data-clipboard-text="(　ﾟ∀ﾟ) ﾉ♡">(　ﾟ∀ﾟ) ﾉ♡</button>
+            <button class="kaomojibutton" data-clipboard-text="ᕦ(ò_óˇ)ᕤ">ᕦ(ò_óˇ)ᕤ</button>
+            <button class="kaomojibutton" data-clipboard-text="(●⁰౪⁰●)">(●⁰౪⁰●)</button>
+            <button class="kaomojibutton" data-clipboard-text="(*’ｰ’*)">(*’ｰ’*)</button>
+            <button class="kaomojibutton" data-clipboard-text="٩(๑´3｀๑)۶">٩(๑´3｀๑)۶</button>
+            <button class="kaomojibutton" data-clipboard-text="( ˘･з･)">( ˘･з･)</button>
+            <button class="kaomojibutton" data-clipboard-text="(つд⊂)">(つд⊂)</button>
+            <button class="kaomojibutton" data-clipboard-text="(´;ω;`)">(´;ω;`)</button>
+            <button class="kaomojibutton" data-clipboard-text="╮(╯∀╰)╭">╮(╯∀╰)╭</button>
+            <button class="kaomojibutton" data-clipboard-text="(ﾟ3ﾟ)～♪">(ﾟ3ﾟ)～♪</button>
+            <button class="kaomojibutton" data-clipboard-text="σ`∀´)σ">σ`∀´)σ</button>
+            <button class="kaomojibutton" data-clipboard-text="Σ(°Д°">Σ(°Д°</button>
+            <button class="kaomojibutton" data-clipboard-text="∑(￣□￣ )">∑(￣□￣ )</button>
+            <button class="kaomojibutton" data-clipboard-text="(¦3[▓▓]	">(¦3[▓▓] </button>
+            <button class="kaomojibutton" data-clipboard-text="_(´□`」 ∠)_">_(´□`」 ∠)_</button>
+            <button class="kaomojibutton" data-clipboard-text="( ﾟДﾟ)σ">( ﾟДﾟ)σ</button>
+            <button class="kaomojibutton" data-clipboard-text="┏( .-. ┏ ) ┓">┏( .-. ┏ ) ┓</button>
+            <button class="kaomojibutton" data-clipboard-text="(๑¯∀¯๑)">(๑¯∀¯๑)</button>
+            <button class="kaomojibutton" data-clipboard-text="ლ(´ڡ`ლ)">ლ(´ڡ`ლ)</button>
+            <button class="kaomojibutton" data-clipboard-text="✧٩(ˊᗜˋ*)و">✧٩(ˊᗜˋ*)و</button>
+            <button class="kaomojibutton" data-clipboard-text="(๑˙ー˙๑)">(๑˙ー˙๑)</button>
+            <button class="kaomojibutton" data-clipboard-text="∑(°Д°ノ)ノ">∑(°Д°ノ)ノ</button>
+            <button class="kaomojibutton" data-clipboard-text="(ﾟ∀ﾟ≡ﾟ∀ﾟ)">(ﾟ∀ﾟ≡ﾟ∀ﾟ)</button>
+            <button class="kaomojibutton" data-clipboard-text="( ˊ̱˂˃ˋ̱ )">( ˊ̱˂˃ˋ̱ )</button>
+            <button class="kaomojibutton" data-clipboard-text="´◡`">´◡`</button>
+            <button class="kaomojibutton" data-clipboard-text="(⁎⁍̴̛ᴗ⁍̴̛⁎)">(⁎⁍̴̛ᴗ⁍̴̛⁎)</button>
+            <button class="kaomojibutton" data-clipboard-text="(˶‾᷄ ⁻̫ ‾᷅˵)">(˶‾᷄ ⁻̫ ‾᷅˵)</button>
+            <button class="kaomojibutton" data-clipboard-text="(♡ ᐛ )人( ᐛ ♡)">(♡ ᐛ )人( ᐛ ♡)</button>
+            <button class="kaomojibutton" data-clipboard-text="( 　‘-‘ )ノ)`-‘ )">( 　‘-‘ )ノ)`-‘ )</button>
+            <button class="kaomojibutton" data-clipboard-text="ʕ•ᴥ•ʔ">ʕ•ᴥ•ʔ</button>
+            <button class="kaomojibutton" data-clipboard-text="( இдஇ )">( இдஇ )</button>
+            <button class="kaomojibutton" data-clipboard-text="(｡•́︿•̀｡)">(｡•́︿•̀｡)</button>
+            <button class="kaomojibutton" data-clipboard-text="(ง ´͈౪`͈)ว">(ง ´͈౪`͈)ว</button>
+            <button class="kaomojibutton" data-clipboard-text="ฅ^•ﻌ•^ฅ">ฅ^•ﻌ•^ฅ</button>
+            <button class="kaomojibutton" data-clipboard-text="(ᵒ̤̑ ₀̑ ᵒ̤̑)">(ᵒ̤̑ ₀̑ ᵒ̤̑)</button>
+            <button class="kaomojibutton" data-clipboard-text="✧*｡٩(ˊᗜˋ*)و✧*｡">✧*｡٩(ˊᗜˋ*)و✧*｡</button>
+            <button class="kaomojibutton" data-clipboard-text="ଘ(⊃ˊᵕˋ)⊃━☆’･*:.｡">ଘ(⊃ˊᵕˋ)⊃━☆’･*:.｡</button>
+            <button class="kaomojibutton" data-clipboard-text="°˖✧◝(⁰▿⁰)◜✧˖°">°˖✧◝(⁰▿⁰)◜✧˖°</button>
+            <button class="kaomojibutton" data-clipboard-text="٩(ˊωˋ*)و">٩(ˊωˋ*)و</button>
+            <button class="kaomojibutton" data-clipboard-text="(๑･̑◡･̑๑)">(๑･̑◡･̑๑)</button>
+            <button class="kaomojibutton" data-clipboard-text="(´ . .̫ . `)">(´ . .̫ . `)</button>
+            <button class="kaomojibutton" data-clipboard-text="ᐠ( ᐛ )ᐟᐠ( ᐖ )ᐟ">ᐠ( ᐛ )ᐟᐠ( ᐖ )ᐟ</button>
+            <button class="kaomojibutton" data-clipboard-text="₍₍ (ง ˘ω˘ )ว ⁾⁾">₍₍ (ง ˘ω˘ )ว ⁾⁾</button>
+            <button class="kaomojibutton" data-clipboard-text="(●´ϖ`●)">(●´ϖ`●)</button>
+            <button class="kaomojibutton" data-clipboard-text="╭(°A°`)╮">╭(°A°`)╮</button>
+            <button class="kaomojibutton" data-clipboard-text="✧(  ु•⌄• )◞◟( •⌄• ू )✧">✧( ु•⌄• )◞◟( •⌄• ू
+                )✧</button>
+            <button class="kaomojibutton" data-clipboard-text="（╯°□°）╯︵(\ .o.)\">（╯°□°）╯︵(\ .o.)\</button>
+            <button class="kaomojibutton" data-clipboard-text="(o´〰`o)">(o´〰`o)</button>
+            <button class="kaomojibutton" data-clipboard-text="(´･ω･`)">(´･ω･`)</button>
+            <button class="kaomojibutton" data-clipboard-text="( ´༥` )">( ´༥` )</button>
+            <button class="kaomojibutton" data-clipboard-text="(｡ì _ í｡)">(｡ì _ í｡)</button>
+            <button class="kaomojibutton" data-clipboard-text="( ˙Ⱉ˙ )">( ˙Ⱉ˙ )</button>
+            <button class="kaomojibutton" data-clipboard-text="( o̴̶̷᷄﹏o̴̶̷̥᷅ )">( o̴̶̷᷄﹏o̴̶̷̥᷅ )</button>
+            <button class="kaomojibutton" data-clipboard-text="(⁎˃ᴗ˂⁎)">(⁎˃ᴗ˂⁎)</button>
+            <button class="kaomojibutton" data-clipboard-text="(  ॱߑॱ  )">( ॱߑॱ )</button>
+            <button class="kaomojibutton" data-clipboard-text="( ∙̆.̯∙̆)">( ∙̆.̯∙̆)</button>
+            <button class="kaomojibutton" data-clipboard-text="✧*٩(。ˊωˋ。)و✧">✧*٩(。ˊωˋ。)و✧</button>
+            <button class="kaomojibutton" data-clipboard-text="₍ᵔ·͈༝·͈ᵔ₎">₍ᵔ·͈༝·͈ᵔ₎</button>
+            <button class="kaomojibutton" data-clipboard-text="(๐•̆ ·̭ •̆๐)">(๐•̆ ·̭ •̆๐)</button>
+            <button class="kaomojibutton" data-clipboard-text="（・⊝・）">（・⊝・）</button>
+            <button class="kaomojibutton" data-clipboard-text="₍ ᐢ.  ̫ .ᐢ ₎">₍ ᐢ. ̫ .ᐢ ₎</button>
+            <button class="kaomojibutton" data-clipboard-text="◡̈">◡̈</button>
+            <button class="kaomojibutton" data-clipboard-text="( •˓◞•̀ )">( •˓◞•̀ )</button>
+            <button class="kaomojibutton" data-clipboard-text="( •́ ̯•̀ )">( •́ ̯•̀ )</button>
+            <button class="kaomojibutton" data-clipboard-text="(•᷄ࡇ•᷅）">(•᷄ࡇ•᷅）</button>
+            <button class="kaomojibutton" data-clipboard-text="( ⋅֊⋅ )">( ⋅֊⋅ )</button>
+            <button class="kaomojibutton" data-clipboard-text="( ་ ⍸ ་ )">( ་ ⍸ ་ )</button>
+            <button class="kaomojibutton" data-clipboard-text="٩ (  ｰ̀֊ｰ́ )و">٩ ( ｰ̀֊ｰ́ )و</button>
+            <button class="kaomojibutton" data-clipboard-text="•̑‧̮•̑">•̑‧̮•̑</button>
+            <button class="kaomojibutton" data-clipboard-text="(◜𖥦◝)">(◜𖥦◝)</button>
+            <button class="kaomojibutton" data-clipboard-text="(˶‾᷄ꈊ‾᷅˵)">(˶‾᷄ꈊ‾᷅˵)</button>
+            <button class="kaomojibutton" data-clipboard-text="(⑅•ᴗ•⑅)">(⑅•ᴗ•⑅)</button>
+            <button class="kaomojibutton" data-clipboard-text="( -᷅ ·̫ -᷄ )✧">( -᷅ ·̫ -᷄ )✧</button>
+            <button class="kaomojibutton" data-clipboard-text="♡\(*ˊᗜˋ*)/♡">♡\(*ˊᗜˋ*)/♡</button>
+            <button class="kaomojibutton" data-clipboard-text="(ง`0´)ง">(ง`0´)ง</button>
+            <button class="kaomojibutton" data-clipboard-text="ᵕ᷄ι ̠ᵕ᷅">ᵕ᷄ι ̠ᵕ᷅</button>
+            <button class="kaomojibutton" data-clipboard-text="( •̅_•̅ )">( •̅_•̅ )</button>
+            <button class="kaomojibutton" data-clipboard-text="(߹𖥦߹)">(߹𖥦߹)</button>
+            <button class="kaomojibutton" data-clipboard-text="U•ᴥ•U">U•ᴥ•U</button>
+            <button class="kaomojibutton" data-clipboard-text="( ఠᴗఠ )">( ఠᴗఠ )</button>
+            <button class="kaomojibutton" data-clipboard-text="ꉂ(ˊᗜˋ*)">ꉂ(ˊᗜˋ*)</button>
+            <button class="kaomojibutton" data-clipboard-text="（ •̥  ̼ •̥ ）">（ •̥ ̼ •̥ ）</button>
+            <button class="kaomojibutton" data-clipboard-text="𖦹‎ ࡇ 𖦹">‎𖦹‎ ࡇ 𖦹</button>
+            <button class="kaomojibutton" data-clipboard-text="(っ ̯ - ) ᶻᶻ">(っ ̯ - ) ᶻᶻ‎</button>
+            <button class="kaomojibutton" data-clipboard-text="(˶ ̇ ̵ ̇˶ )">(˶ ̇ ̵ ̇˶ )</button>
+            <button class="kaomojibutton" data-clipboard-text="(˙Ꙫ˙)">(˙Ꙫ˙)</button>
+            <button class="kaomojibutton" data-clipboard-text="( '•Ꙫ• ' )">( '•Ꙫ• ' )</button>
+            <button class="kaomojibutton" data-clipboard-text="(´°‐°｀)">(´°‐°｀)</button>
+            <button class="kaomojibutton" data-clipboard-text="(ノ｀Д´)ノ彡┻━┻">(ノ｀Д´)ノ彡┻━┻</button>
+            <button class="kaomojibutton" data-clipboard-text="(・_・)">(・_・)</button>
+            <button class="kaomojibutton" data-clipboard-text="(・口・)">(・口・)</button>
+            <button class="kaomojibutton" data-clipboard-text="(._.)">(._.)</button>
+        </div>
+        <div id="kaomojibuttonarea-happy">
+            <div class="categotytitle">愉悅／滿足</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="･ᴗ･">･ᴗ･</button>
+                <button class="kaomojibutton" data-clipboard-text=" (´・◡・｀)"> (´・◡・｀)</button>
+                <button class="kaomojibutton" data-clipboard-text="◡̈ ">◡̈ </button>
+                <button class="kaomojibutton" data-clipboard-text="(・∀・)">(・∀・)</button>
+                <button class="kaomojibutton" data-clipboard-text="(・ω・)">(・ω・)</button>
+                <button class="kaomojibutton" data-clipboard-text="´◡`">´◡`</button>
+                <button class="kaomojibutton" data-clipboard-text="•̑‧̮•̑">•̑‧̮•̑</button>
+                <button class="kaomojibutton" data-clipboard-text="( ´ ▽ ` )b">( ´ ▽ ` )b</button>
+                <button class="kaomojibutton" data-clipboard-text="(๑¯∀¯๑)">(๑¯∀¯๑)</button>
+                <button class="kaomojibutton" data-clipboard-text="(´-ω-｀)">(´-ω-｀)</button>
+                <button class="kaomojibutton" data-clipboard-text="٩(ˊωˋ*)و">٩(ˊωˋ*)و</button>
+                <button class="kaomojibutton" data-clipboard-text="(๑･̑◡･̑๑) ">(๑･̑◡･̑๑) </button>
+                <button class="kaomojibutton" data-clipboard-text="(´ . .̫ . `)">(´ . .̫ . `)</button>
+                <button class="kaomojibutton" data-clipboard-text="₍₍ (ง ˘ω˘ )ว ⁾⁾">₍₍ (ง ˘ω˘ )ว ⁾⁾</button>
+                <button class="kaomojibutton" data-clipboard-text="(つ´ω`)つ">(つ´ω`)つ</button>
+                <button class="kaomojibutton" data-clipboard-text="(˶‾᷄ ⁻̫ ‾᷅˵)">(˶‾᷄ ⁻̫ ‾᷅˵)</button>
+                <button class="kaomojibutton" data-clipboard-text="(๑´ㅂ`๑)">(๑´ㅂ`๑)</button>
+                <button class="kaomojibutton" data-clipboard-text="(ㅅ˘ㅂ˘)">(ㅅ˘ㅂ˘)</button>
+                <button class="kaomojibutton" data-clipboard-text="(๑´ㅁ`)">(๑´ㅁ`)</button>
+                <button class="kaomojibutton" data-clipboard-text="( ˘ ³˘)♥">( ˘ ³˘)♥</button>
+                <button class="kaomojibutton" data-clipboard-text="(ꈍᴗꈍ)">(ꈍᴗꈍ)</button>
+                <button class="kaomojibutton" data-clipboard-text="(っ´ω`c)">(っ´ω`c)</button>
+                <button class="kaomojibutton" data-clipboard-text="(　ﾟ∀ﾟ) ﾉ♡">(　ﾟ∀ﾟ) ﾉ♡</button>
+                <button class="kaomojibutton" data-clipboard-text="(◍•ᴗ•◍)">(◍•ᴗ•◍)</button>
+                <button class="kaomojibutton" data-clipboard-text="(o´罒`o)">(o´罒`o)</button>
+                <button class="kaomojibutton" data-clipboard-text="(o´〰`o)">(o´〰`o)</button>
+                <button class="kaomojibutton" data-clipboard-text="(´･ω･`)">(´･ω･`)</button>
+                <button class="kaomojibutton" data-clipboard-text=" ( ´༥` )"> ( ´༥` )</button>
+                <button class="kaomojibutton" data-clipboard-text="(◜𖥦◝)">(◜𖥦◝)</button>
+                <button class="kaomojibutton" data-clipboard-text="(•ㅂ•)/">(•ㅂ•)/</button>
+                <button class="kaomojibutton" data-clipboard-text="(˶‾᷄ꈊ‾᷅˵)">(˶‾᷄ꈊ‾᷅˵)</button>
+                <button class="kaomojibutton" data-clipboard-text="(⑅•ᴗ•⑅)">(⑅•ᴗ•⑅)</button>
+                <button class="kaomojibutton" data-clipboard-text="( •˓◞•̀ )">( •˓◞•̀ )</button>
+                <button class="kaomojibutton" data-clipboard-text="(ง ´͈౪`͈)ว">(ง ´͈౪`͈)ว</button>
+                <button class="kaomojibutton" data-clipboard-text="( ⋅֊⋅ )">( ⋅֊⋅ )</button>
+                <button class="kaomojibutton" data-clipboard-text="ꉂ(ˊᗜˋ*)">ꉂ(ˊᗜˋ*)</button>
+                <button class="kaomojibutton" data-clipboard-text="٩(๑´3｀๑)۶">٩(๑´3｀๑)۶</button>
+                <button class="kaomojibutton" data-clipboard-text="(●´ϖ`●)">(●´ϖ`●)</button>
+                <button class="kaomojibutton" data-clipboard-text="⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄">⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄</button>
+                <button class="kaomojibutton" data-clipboard-text="( ᐛ )人( ᐛ )">( ᐛ )人( ᐛ )"></button>
+            </div>
+            <div class="categotytitle">興奮／驚喜</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="(((o(*ﾟ▽ﾟ*)o)))">(((o(*ﾟ▽ﾟ*)o)))</button>
+                <button class="kaomojibutton" data-clipboard-text="｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡">｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡</button>
+                <button class="kaomojibutton" data-clipboard-text="✧*｡٩(ˊᗜˋ*)و✧*｡">✧*｡٩(ˊᗜˋ*)و✧*｡</button>
+                <button class="kaomojibutton" data-clipboard-text="(灬ºωº灬)">(灬ºωº灬)</button>
+                <button class="kaomojibutton" data-clipboard-text="(⁎˃ᴗ˂⁎)">(⁎˃ᴗ˂⁎)</button>
+                <button class="kaomojibutton" data-clipboard-text="( -᷅ ·̫ -᷄ )✧">( -᷅ ·̫ -᷄ )✧</button>
+                <button class="kaomojibutton" data-clipboard-text="♡\(*ˊᗜˋ*)/♡">♡\(*ˊᗜˋ*)/♡</button>
+                <button class="kaomojibutton" data-clipboard-text="(ᵒ̤̑ ₀̑ ᵒ̤̑)">(ᵒ̤̑ ₀̑ ᵒ̤̑)</button>
+                <button class="kaomojibutton" data-clipboard-text="°˖✧◝(⁰▿⁰)◜✧˖°">°˖✧◝(⁰▿⁰)◜✧˖°</button>
+            </div>
+            <div class="categotytitle">鬥志</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="(๑˃ᴗ˂)و">(๑˃ᴗ˂)و</button>
+                <button class="kaomojibutton" data-clipboard-text="( • ̀ω•́ )">( • ̀ω•́ )</button>
+                <button class="kaomojibutton" data-clipboard-text="(๑•̀ㅂ•́)و✧">(๑•̀ㅂ•́)و✧</button>
+                <button class="kaomojibutton" data-clipboard-text="(ง๑ •̀_•́)ง">(ง๑ •̀_•́)ง</button>
+                <button class="kaomojibutton" data-clipboard-text="ᕦ(ò_óˇ)ᕤ">ᕦ(ò_óˇ)ᕤ</button>
+                <button class="kaomojibutton" data-clipboard-text="✧٩(ˊᗜˋ*)و">✧٩(ˊᗜˋ*)و</button>
+                <button class="kaomojibutton" data-clipboard-text="٩ (  ｰ̀֊ｰ́ )و">٩ ( ｰ̀֊ｰ́ )و</button>
+                <button class="kaomojibutton" data-clipboard-text="✧*٩(。ˊωˋ。)و✧">✧*٩(。ˊωˋ。)و✧</button>
+                <button class="kaomojibutton" data-clipboard-text="(ง`0´)ง">(ง`0´)ง</button>
+                <button class="kaomojibutton" data-clipboard-text="(｡ì _ í｡)">(｡ì _ í｡)</button>
+            </div>
+            <div class="categotytitle">屁孩</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="(°∀°)">(°∀°)</button>
+                <button class="kaomojibutton" data-clipboard-text="(ノ°▽°)ノ">(ノ°▽°)ノ</button>
+                <button class="kaomojibutton" data-clipboard-text="ヽ( ° ▽°)ノ">ヽ( ° ▽°)ノ</button>
+                <button class="kaomojibutton" data-clipboard-text="ヽ(́◕◞౪◟◕‵)ﾉ">ヽ(́◕◞౪◟◕‵)ﾉ</button>
+                <button class="kaomojibutton" data-clipboard-text="(●⁰౪⁰●)">(●⁰౪⁰●)</button>
+                <button class="kaomojibutton" data-clipboard-text="(≖ᴗ≖๑)">(≖ᴗ≖๑)</button>
+                <button class="kaomojibutton" data-clipboard-text="(´≖◞౪◟≖)">(´≖◞౪◟≖)</button>
+                <button class="kaomojibutton" data-clipboard-text="(́=◞౪◟=‵)">(́=◞౪◟=‵)</button>
+                <button class="kaomojibutton" data-clipboard-text="ᕕ( ᐛ )ᕗ">ᕕ( ᐛ )ᕗ</button>
+                <button class="kaomojibutton" data-clipboard-text="٩( ᐛ )و">٩( ᐛ )و</button>
+                <button class="kaomojibutton" data-clipboard-text="(ﾟ∀。)">(ﾟ∀。)</button>
+                <button class="kaomojibutton" data-clipboard-text="σ ﾟ∀ ﾟ) ﾟ∀ﾟ)σ ">σ ﾟ∀ ﾟ) ﾟ∀ﾟ)σ </button>
+                <button class="kaomojibutton" data-clipboard-text="◝(　ﾟ∀ ﾟ )◟">◝(　ﾟ∀ ﾟ )◟</button>
+                <button class="kaomojibutton" data-clipboard-text=" ( ˙Ⱉ˙ )"> ( ˙Ⱉ˙ )</button>
+                <button class="kaomojibutton" data-clipboard-text="(⁎⁍̴̛ᴗ⁍̴̛⁎)">(⁎⁍̴̛ᴗ⁍̴̛⁎)</button>
+                <button class="kaomojibutton" data-clipboard-text="(ﾟ∀ﾟ≡ﾟ∀ﾟ)">(ﾟ∀ﾟ≡ﾟ∀ﾟ)</button>
+                <button class="kaomojibutton" data-clipboard-text="σ`∀´)σ">σ`∀´)σ</button>
+                <button class="kaomojibutton" data-clipboard-text="╮(╯∀╰)╭">╮(╯∀╰)╭</button>
+                <button class="kaomojibutton" data-clipboard-text="(ﾟ3ﾟ)～♪">(ﾟ3ﾟ)～♪</button>
+                <button class="kaomojibutton" data-clipboard-text="(」ﾟﾛﾟ)｣">(」ﾟﾛﾟ)｣</button>
+                <button class="kaomojibutton" data-clipboard-text="∠( ᐛ 」∠)_">∠( ᐛ 」∠)_</button>
+                <button class="kaomojibutton" data-clipboard-text="(｢･ω･)｢">(｢･ω･)｢</button>
+                <button class="kaomojibutton" data-clipboard-text="(・ε・)">(・ε・)</button>
+            </div>
+        </div>
+        <div id="kaomojibuttonarea-surprised">
+            <div class="categotytitle">驚訝</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="(・口・)">(・口・)</button>
+                <button class="kaomojibutton" data-clipboard-text="(ﾟдﾟ)">(ﾟдﾟ)</button>
+                <button class="kaomojibutton" data-clipboard-text="Σ(°Д°  ">Σ(°Д° </button>
+                <button class="kaomojibutton" data-clipboard-text="Σ(°∀°ﾉ)ﾉ">Σ(°∀°ﾉ)ﾉ</button>
+                <button class="kaomojibutton" data-clipboard-text="Σ(￣。￣ﾉ)ﾉ">Σ(￣。￣ﾉ)ﾉ</button>
+                <button class="kaomojibutton" data-clipboard-text="∑(°Д°ノ)ノ">∑(°Д°ノ)ノ</button>
+                <button class="kaomojibutton" data-clipboard-text="Σ(=口=ﾉ)ﾉ">Σ(=口=ﾉ)ﾉ</button>
+                <button class="kaomojibutton" data-clipboard-text="∑(￣□￣ )">∑(￣□￣ )</button>
+                <button class="kaomojibutton" data-clipboard-text="Σ(°口° )">Σ(°口° )</button>
+                <button class="kaomojibutton" data-clipboard-text="Σヽ(ﾟД ﾟ; )ﾉ">Σヽ(ﾟД ﾟ; )ﾉ</button>
+            </div>
+            <div class="categotytitle">傻眼</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="( ⌓̈ )">( ⌓̈ )</button>
+                <button class="kaomojibutton" data-clipboard-text="(꒪ꇴ꒪;)">(꒪ꇴ꒪;)</button>
+                <button class="kaomojibutton" data-clipboard-text="(☉д⊙)">(☉д⊙)</button>
+                <button class="kaomojibutton" data-clipboard-text="( º△º )">( º△º )</button>
+                <button class="kaomojibutton" data-clipboard-text="╭(°A°`)╮">╭(°A°`)╮</button>
+            </div>
+            <div class="categotytitle">慌亂</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="(ﾟдﾟ≡ﾟдﾟ)">(ﾟдﾟ≡ﾟдﾟ)</button>
+                <button class="kaomojibutton" data-clipboard-text="ﾚ(ﾟ∀ﾟ;)ﾍ">ﾚ(ﾟ∀ﾟ;)ﾍ</button>
+                <button class="kaomojibutton" data-clipboard-text="ﾍ( ﾟ∀ﾟ;)ﾉ">ﾍ( ﾟ∀ﾟ;)ﾉ</button>
+            </div>
+        </div>
+        <div id="kaomojibuttonarea-angry">
+            <div class="categotytitle">平靜</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="(๑˙ー˙๑)">(๑˙ー˙๑)</button>
+                <button class="kaomojibutton" data-clipboard-text="(˶ ̇ ̵ ̇˶ )">(˶ ̇ ̵ ̇˶ )</button>
+                <button class="kaomojibutton" data-clipboard-text="(*ﾟーﾟ)">(*ﾟーﾟ)</button>
+                <button class="kaomojibutton" data-clipboard-text="(*’ｰ’*)">(*’ｰ’*)</button>
+                <button class="kaomojibutton" data-clipboard-text="(｡-_-｡) ">(｡-_-｡) </button>
+                <button class="kaomojibutton" data-clipboard-text="(・_・)">(・_・)</button>
+                <button class="kaomojibutton" data-clipboard-text="(._.)">(._.)</button>
+                <button class="kaomojibutton" data-clipboard-text="(  ॱߑॱ  )">( ॱߑॱ )</button>
+                <button class="kaomojibutton" data-clipboard-text="( ¯•ω•¯ )">( ¯•ω•¯ )</button>
+                <button class="kaomojibutton" data-clipboard-text="( •̅_•̅ )">( •̅_•̅ )</button>
+                <button class="kaomojibutton" data-clipboard-text="( ་ ⍸ ་ )">( ་ ⍸ ་ )</button>
+                <button class="kaomojibutton" data-clipboard-text="┳━┳ノ( ' - 'ノ) ">┳━┳ノ( ' - 'ノ) </button>
+            </div>
+            <div class="categotytitle">擺臉色</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="( ˘･з･)">( ˘･з･)</button>
+                <button class="kaomojibutton" data-clipboard-text="( ˘•ω•˘ )">( ˘•ω•˘ )</button>
+                <button class="kaomojibutton" data-clipboard-text="(ㆆωㆆ)">(ㆆωㆆ)</button>
+                <button class="kaomojibutton" data-clipboard-text="(ㆆᴗㆆ)">(ㆆᴗㆆ)</button>
+                <button class="kaomojibutton" data-clipboard-text="꒪ω꒪">꒪ω꒪</button>
+                <button class="kaomojibutton" data-clipboard-text="（Φ ω Φ）">（Φ ω Φ）</button>
+                <button class="kaomojibutton" data-clipboard-text="( ఠᴗఠ )">( ఠᴗఠ )</button>
+                <button class="kaomojibutton" data-clipboard-text="( •᷄ὤ•᷅)">( •᷄ὤ•᷅)</button>
+                <button class="kaomojibutton" data-clipboard-text="( -᷅_-᷄ )">( -᷅_-᷄ )</button>
+                <button class="kaomojibutton" data-clipboard-text="( ∙̆.̯∙̆)">( ∙̆.̯∙̆)</button>
+                <button class="kaomojibutton" data-clipboard-text="ㅍ_ㅍ">ㅍ_ㅍ</button>
+                <button class="kaomojibutton" data-clipboard-text="(눈‸눈)">(눈‸눈)</button>
+                <button class="kaomojibutton" data-clipboard-text="ಠ౪ಠ">ಠ౪ಠ</button>
+                <button class="kaomojibutton" data-clipboard-text="ಠ_ಠ">ಠ_ಠ</button>
+                <button class="kaomojibutton" data-clipboard-text="(ಠ益ಠ)">(ಠ益ಠ)</button>
+            </div>
+            <div class="categotytitle">生氣</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="(๐•̆ ·̭ •̆๐)">(๐•̆ ·̭ •̆๐)</button>
+                <button class="kaomojibutton" data-clipboard-text="(｡ŏ_ŏ)">(｡ŏ_ŏ)</button>
+                <button class="kaomojibutton" data-clipboard-text="٩(๑`^´๑)۶">٩(๑`^´๑)۶</button>
+                <button class="kaomojibutton" data-clipboard-text="٩(๑`н´๑)۶">٩(๑`н´๑)۶</button>
+                <button class="kaomojibutton" data-clipboard-text="(｀Д´)">(｀Д´)</button>
+                <button class="kaomojibutton" data-clipboard-text="ι(｀ロ´)ノ">ι(｀ロ´)ノ</button>
+                <button class="kaomojibutton" data-clipboard-text="( ﾟДﾟ)σ">( ﾟДﾟ)σ</button>
+                <button class="kaomojibutton" data-clipboard-text="(•᷄ࡇ•᷅）">(•᷄ࡇ•᷅）</button>
+                <button class="kaomojibutton" data-clipboard-text="ヽ(`Д´)ノ">ヽ(`Д´)ノ</button>
+                <button class="kaomojibutton" data-clipboard-text="ヽ(#`Д´)ﾉ">ヽ(#`Д´)ﾉ</button>
+                <button class="kaomojibutton" data-clipboard-text="(╯°□°）╯︵ ┻━┻">(╯°□°）╯︵ ┻━┻</button>
+                <button class="kaomojibutton" data-clipboard-text="（╯°□°）╯︵(\ .o.)\">（╯°□°）╯︵(\ .o.)\</button>
+                <button class="kaomojibutton" data-clipboard-text="(ノ｀Д´)ノ彡┻━┻">(ノ｀Д´)ノ彡┻━┻</button>
+            </div>
+        </div>
+        <div id="kaomojibuttonarea-sad">
+            <div class="categotytitle">無奈／委屈</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="(๑•́ ₃ •̀๑)">(๑•́ ₃ •̀๑)</button>
+                <button class="kaomojibutton" data-clipboard-text="(｡•́︿•̀｡)">(｡•́︿•̀｡)</button>
+                <button class="kaomojibutton" data-clipboard-text="( •́ ̯•̀ )">( •́ ̯•̀ )</button>
+                <button class="kaomojibutton" data-clipboard-text="(´°‐°｀) ">(´°‐°｀) </button>
+                <button class="kaomojibutton" data-clipboard-text="(´～`)">(´～`)</button>
+                <button class="kaomojibutton" data-clipboard-text="( ´_>`)">( ´_>`)</button>
+                <button class="kaomojibutton" data-clipboard-text="(◞‸◟)">(◞‸◟)</button>
+                <button class="kaomojibutton" data-clipboard-text="(´Ａ｀)">(´Ａ｀)</button>
+                <button class="kaomojibutton" data-clipboard-text="ᵕ᷄ι ̠ᵕ᷅">ᵕ᷄ι ̠ᵕ᷅</button>
+            </div>
+            <div class="categotytitle">攤手</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="¯\_(ツ)_/¯">¯\_(ツ)_/¯</button>
+                <button class="kaomojibutton" data-clipboard-text="┐(´д`)┌">┐(´д`)┌</button>
+                <button class="kaomojibutton" data-clipboard-text="╮(╯_╰)╭">╮(╯_╰)╭</button>
+            </div>
+            <div class="categotytitle">五月病</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="_(:3 」∠ )_">_(:3 」∠ )_</button>
+                <button class="kaomojibutton" data-clipboard-text="_(┐「ε:)_">_(┐「ε:)_</button>
+                <button class="kaomojibutton" data-clipboard-text="_(¦3」∠)_">_(¦3」∠)_</button>
+            </div>
+            <div class="categotytitle">捂臉</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="(つд⊂)">(つд⊂)</button>
+                <button class="kaomojibutton" data-clipboard-text="(´∩ω∩｀)">(´∩ω∩｀)</button>
+                <button class="kaomojibutton" data-clipboard-text="( / Д  \  )">( / Д \ )</button>
+            </div>
+            <div class="categotytitle">快要使王</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="( ×ω× )">( ×ω× )</button>
+                <button class="kaomojibutton" data-clipboard-text="(°ཀ°)">(°ཀ°)</button>
+                <button class="kaomojibutton" data-clipboard-text="_(´□`」 ∠)_">_(´□`」 ∠)_</button>
+                <button class="kaomojibutton" data-clipboard-text="_(´ཀ`」 ∠)_">_(´ཀ`」 ∠)_</button>
+            </div>
+            <div class="categotytitle">暈</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="‎𖦹‎ ࡇ 𖦹">‎𖦹‎ ࡇ 𖦹</button>
+            </div>
+            <div class="categotytitle">哭泣</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="(´;ω;`)">(´;ω;`)</button>
+                <button class="kaomojibutton" data-clipboard-text="（ •̥  ̼ •̥ ）">（ •̥ ̼ •̥ ）</button>
+                <button class="kaomojibutton" data-clipboard-text="(߹𖥦߹)">(߹𖥦߹)</button>
+                <button class="kaomojibutton" data-clipboard-text=" (☍﹏⁰) "> (☍﹏⁰) </button>
+                <button class="kaomojibutton" data-clipboard-text="ಥ_ಥ">ಥ_ಥ</button>
+                <button class="kaomojibutton" data-clipboard-text="( o̴̶̷᷄﹏o̴̶̷̥᷅ )">( o̴̶̷᷄﹏o̴̶̷̥᷅ )</button>
+                <button class="kaomojibutton" data-clipboard-text="( இдஇ )">( இдஇ )</button>
+                <button class="kaomojibutton" data-clipboard-text="・゜・(PД`q｡)・゜・">・゜・(PД`q｡)・゜・</button>
+            </div>
+        </div>
+        <div id="kaomojibuttonarea-action">
+            <div class="categotytitle">想吃</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="( º﹃º )">( º﹃º )</button>
+                <button class="kaomojibutton" data-clipboard-text="(๑´ڡ`๑)">(๑´ڡ`๑)</button>
+                <button class="kaomojibutton" data-clipboard-text="ლ(´ڡ`ლ)">ლ(´ڡ`ლ)</button>
+            </div>
+            <div class="categotytitle">想睡</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="（¯﹃¯）">（¯﹃¯）</button>
+                <button class="kaomojibutton" data-clipboard-text="(´-ωก`)">(´-ωก`)</button>
+                <button class="kaomojibutton" data-clipboard-text="(っ ̯ - ) ᶻᶻ‎">(っ ̯ - ) ᶻᶻ‎</button>
+                <button class="kaomojibutton" data-clipboard-text="(¦3[▓▓]	">(¦3[▓▓] </button>
+            </div>
+            <div class="categotytitle">雙人互動</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="(*´∀｀*)人(*´∀｀*)">(*´∀｀*)人(*´∀｀*)</button>
+                <button class="kaomojibutton" data-clipboard-text="✧(  ु•⌄• )◞◟( •⌄• ू )✧">✧( ु•⌄• )◞◟( •⌄• ू
+                    )✧</button>
+                <button class="kaomojibutton" data-clipboard-text="(♡ ᐛ )人( ᐛ ♡)">(♡ ᐛ )人( ᐛ ♡)</button>
+                <button class="kaomojibutton" data-clipboard-text="ᐠ( ᐛ )ᐟᐠ( ᐖ )ᐟ">ᐠ( ᐛ )ᐟᐠ( ᐖ )ᐟ</button>
+                <button class="kaomojibutton" data-clipboard-text="( ᐛ )人( ᐛ )">( ᐛ )人( ᐛ )"></button>
+                <button class="kaomojibutton" data-clipboard-text="( 　‘-‘ )ノ)`-‘ )">( 　‘-‘ )ノ)`-‘ )</button>
+                <button class="kaomojibutton" data-clipboard-text="( ´･･)ﾉ(._.`)">( ´･･)ﾉ(._.`)</button>
+                <button class="kaomojibutton" data-clipboard-text="(´;ω;`)ヾ(･∀･`)">(´;ω;`)ヾ(･∀･`)</button>
+            </div>
+            <div class="categotytitle">非人類</div>
+            <div class="categorizedkaomoji">
+                <button class="kaomojibutton" data-clipboard-text="ฅ^•ﻌ•^ฅ">ฅ^•ﻌ•^ฅ</button>
+                <button class="kaomojibutton" data-clipboard-text="₍ᵔ·͈༝·͈ᵔ₎">₍ᵔ·͈༝·͈ᵔ₎</button>
+                <button class="kaomojibutton" data-clipboard-text=" （・⊝・）"> （・⊝・）</button>
+                <button class="kaomojibutton" data-clipboard-text="₍ ᐢ.  ̫ .ᐢ ₎">₍ ᐢ. ̫ .ᐢ ₎</button>
+                <button class="kaomojibutton" data-clipboard-text="( ˊ̱˂˃ˋ̱ )">( ˊ̱˂˃ˋ̱ )</button>
+                <button class="kaomojibutton" data-clipboard-text="U•ᴥ•U">U•ᴥ•U</button>
+                <button class="kaomojibutton" data-clipboard-text="(º⊖º)">(º⊖º)</button>
+                <button class="kaomojibutton" data-clipboard-text="(=´ᴥ`)">(=´ᴥ`)</button>
+                <button class="kaomojibutton" data-clipboard-text="ʕ•ᴥ•ʔ">ʕ•ᴥ•ʔ</button>
+                <button class="kaomojibutton" data-clipboard-text="(˙Ꙫ˙)">(˙Ꙫ˙)</button>
+                <button class="kaomojibutton" data-clipboard-text="( '•Ꙫ• ' )">( '•Ꙫ• ' )</button>
+                <button class="kaomojibutton" data-clipboard-text="┏( .-. ┏ ) ┓">┏( .-. ┏ ) ┓</button>
+                <button class="kaomojibutton" data-clipboard-text="ଘ(⊃ˊᵕˋ)⊃━☆’･*:.｡">ଘ(⊃ˊᵕˋ)⊃━☆’･*:.｡</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

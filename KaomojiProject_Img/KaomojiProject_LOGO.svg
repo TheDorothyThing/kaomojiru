@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="110" viewBox="0 0 40 110">
+  <defs>
+    <clipPath id="clip-KaomojiProject_LOGO">
+      <rect width="40" height="110"/>
+    </clipPath>
+  </defs>
+  <g id="KaomojiProject_LOGO" clip-path="url(#clip-KaomojiProject_LOGO)">
+    <rect width="40" height="110" fill="#fff"/>
+    <g id="KaomojiProject_LOGO-2" data-name="KaomojiProject_LOGO" transform="translate(-107 -72.73)">
+      <g id="Group_2" data-name="Group 2" transform="translate(47 41)">
+        <g id="Group_1" data-name="Group 1" transform="translate(64.048 32.43)">
+          <path id="Path_1" data-name="Path 1" d="M151.754,102.946c0,7.472-7.473,16.095-15.808,16.095s-16.1-7.76-16.1-16.095c0-6.037,4.311-16.1,16.1-16.1C141.982,86.849,151.754,92.885,151.754,102.946Z" transform="translate(-119.85 -86.849)" fill="#706c96"/>
+          <path id="Path_2" data-name="Path 2" d="M135.946,174.155c-10.347,0-16.1-6.611-16.1-15.809,0-12.072,8.623-16.1,16.1-16.1,6.036,0,15.808,4.024,15.808,16.1,0,16.384-7.473,29.6-22.419,39.378l-4.6-3.449c11.21-8.048,16.671-15.234,16.671-21.845Z" transform="translate(-119.85 -89.171)" fill="#f4ab08"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
