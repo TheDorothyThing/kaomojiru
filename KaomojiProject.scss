@@ -21,8 +21,8 @@ body::-webkit-scrollbar {
 }
 
 #logo{
-    height: 160px;
-    width: 160px;
+    min-height: 160px;
+    min-width: 160px;
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -130,6 +130,12 @@ h1{
     opacity: 0;
 }
 
+#copyright{
+    margin-top: 180px;
+    font-size: 14px;
+    color: #404040;
+}
+
 #buttonarea{
     position:relative;
     width: calc(100% - 260px);
@@ -141,12 +147,20 @@ h1{
     position: fixed;
     width: 100%;
     box-sizing: border-box;
-    padding: 24px 0px 18px 24px;
+    padding: 42px 0px 18px 24px;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
-    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
     background-color: #F8F8F8;
     z-index: 1;
+}
+
+#categorybuttonarea::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
 
 @mixin kaomojibuttonarea{
@@ -204,10 +218,8 @@ h1{
 }
 
 @mixin categorybutton{
-    display: inline-block;
     height: 44px;
     padding: 0px 20px;
-    margin-top:18px;
     margin-right: 20px;
     white-space: nowrap;
     font-size: 16px;
