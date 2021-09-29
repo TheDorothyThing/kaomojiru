@@ -57,6 +57,7 @@ h1{
     align-items: center;
     padding: 20px;
     margin-top: 32px;
+    margin-bottom: 108px;
     background-color: #FFFFFF96;
     border-radius: 12px;
 }
@@ -114,10 +115,22 @@ h1{
     top:2px;
 }
 
+#snackbarcontainer{
+    position: fixed;
+    height: 100%;
+    width: 260px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 561px;
+    z-index: 3;
+}
+
 #snackbar{
     position: relative;
     margin-top: 40px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     bottom:0px;
     height: 48px;
     width: 160px;
