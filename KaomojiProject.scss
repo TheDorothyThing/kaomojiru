@@ -150,11 +150,13 @@ h1{
     width: calc(100% - 260px);
     height: 100%;
     margin-left: 260px;
+    box-sizing: border-box;
 }
 
 #categorybuttonarea{
     position: fixed;
-    width: 100%;
+    width: calc(100% - 260px);
+    height: 104px;
     box-sizing: border-box;
     padding: 42px 0px 18px 24px;
     display: flex;
