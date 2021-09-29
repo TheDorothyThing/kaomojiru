@@ -13,7 +13,6 @@ body::-webkit-scrollbar {
 
 #sidebar {
   position: fixed;
-  height: 100%;
   width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,6 +28,7 @@ body::-webkit-scrollbar {
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
+  background-color: #F8F8F8;
 }
 
 #logo {
@@ -183,9 +183,24 @@ h1 {
 }
 
 #copyright {
-  margin-top: 180px;
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 44px;
   font-size: 14px;
   color: #404040;
+  z-index: 1;
 }
 
 #buttonarea {
