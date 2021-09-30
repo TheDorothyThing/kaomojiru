@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="34" viewBox="0 0 10 34">
+  <defs>
+    <clipPath id="clip-Artboard_4">
+      <rect width="10" height="34"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_4" data-name="Artboard – 4" clip-path="url(#clip-Artboard_4)">
+    <rect width="10" height="34" fill="#fff"/>
+    <g id="KaomojiProject_LOGO" transform="translate(0.2 0.8)">
+      <g id="Group_2" data-name="Group 2" transform="translate(0 0)">
+        <g id="Group_1" data-name="Group 1" transform="translate(0 0)">
+          <path id="Path_1" data-name="Path 1" d="M129.421,91.678a5.179,5.179,0,0,1-4.743,4.828,5.059,5.059,0,0,1-4.829-4.828,4.769,4.769,0,0,1,4.829-4.829A5.089,5.089,0,0,1,129.421,91.678Z" transform="translate(-119.85 -86.849)" fill="#706c96"/>
+          <path id="Path_2" data-name="Path 2" d="M124.679,151.822a4.786,4.786,0,1,1,0-9.572,4.647,4.647,0,0,1,4.743,4.829c0,4.915-2.242,8.881-6.726,11.813l-1.38-1.035c3.363-2.414,5-4.57,5-6.554Z" transform="translate(-119.85 -126.326)" fill="#f4ab08"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
