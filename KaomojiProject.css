@@ -754,6 +754,10 @@ body::-webkit-scrollbar {
     margin-top: 68px;
     padding: 12px 0px 40px 16px;
   }
+  .kaomojibutton {
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
 }
 
 @media screen and (max-width: 360px) {
