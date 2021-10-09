@@ -173,7 +173,7 @@ body::-webkit-scrollbar {
 
 #snackbarcontainer {
   position: fixed;
-  height: 100%;
+  margin-top: 681px;
   width: 260px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -186,7 +186,6 @@ body::-webkit-scrollbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 561px;
   z-index: 3;
 }
 
@@ -206,7 +205,7 @@ body::-webkit-scrollbar {
   opacity: 0;
 }
 
-#copyright {
+#copyright-default {
   position: fixed;
   height: 60px;
   width: 260px;
@@ -235,6 +234,13 @@ body::-webkit-scrollbar {
   margin-left: 260px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #categorybuttonarea {
@@ -268,7 +274,6 @@ body::-webkit-scrollbar {
 }
 
 #kaomojibuttonarea-all {
-  position: absolute;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -287,7 +292,6 @@ body::-webkit-scrollbar {
 }
 
 #kaomojibuttonarea-happy {
-  position: absolute;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -305,7 +309,6 @@ body::-webkit-scrollbar {
 }
 
 #kaomojibuttonarea-surprised {
-  position: absolute;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -323,7 +326,6 @@ body::-webkit-scrollbar {
 }
 
 #kaomojibuttonarea-angry {
-  position: absolute;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -341,7 +343,6 @@ body::-webkit-scrollbar {
 }
 
 #kaomojibuttonarea-sad {
-  position: absolute;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -359,7 +360,6 @@ body::-webkit-scrollbar {
 }
 
 #kaomojibuttonarea-action {
-  position: absolute;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -649,6 +649,21 @@ body::-webkit-scrollbar {
   transition: .1s;
 }
 
+#copyright-rwd {
+  height: 40px;
+  width: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #404040;
+}
+
 @media screen and (max-width: 540px) {
   #sidebar {
     width: 100%;
@@ -683,7 +698,7 @@ body::-webkit-scrollbar {
   }
   #logo-small {
     display: inline-block;
-    margin-top: 6px;
+    margin-top: 4px;
   }
   #sidebar h1 {
     margin-top: 0px;
@@ -702,8 +717,7 @@ body::-webkit-scrollbar {
   }
   #snackbarcontainer {
     width: 100%;
-    height: 80px;
-    margin-top: calc(100vh - 120px);
+    margin-top: 100vh;
     padding-top: 0px;
     padding-bottom: 40px;
     display: -webkit-box;
@@ -716,9 +730,13 @@ body::-webkit-scrollbar {
   #snackbar {
     margin-top: 0px;
   }
-  #copyright {
+  #copyright-default {
     display: none;
-    width: 100%;
+  }
+  #copyright-rwd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #buttonarea {
     width: 100%;
@@ -728,31 +746,31 @@ body::-webkit-scrollbar {
   #categorybuttonarea {
     width: 100%;
     height: 68px;
-    padding: 12px 0px 12px 16px;
+    padding: 12px 16px;
   }
   #kaomojibuttonarea-all {
     margin-top: 68px;
-    padding: 12px 0px 40px 16px;
+    padding: 12px 0px 32px 16px;
   }
   #kaomojibuttonarea-happy {
     margin-top: 68px;
-    padding: 12px 0px 40px 16px;
+    padding: 12px 0px 32px 16px;
   }
   #kaomojibuttonarea-surprised {
     margin-top: 68px;
-    padding: 12px 0px 40px 16px;
+    padding: 12px 0px 32px 16px;
   }
   #kaomojibuttonarea-angry {
     margin-top: 68px;
-    padding: 12px 0px 40px 16px;
+    padding: 12px 0px 32px 16px;
   }
   #kaomojibuttonarea-sad {
     margin-top: 68px;
-    padding: 12px 0px 40px 16px;
+    padding: 12px 0px 32px 16px;
   }
   #kaomojibuttonarea-action {
     margin-top: 68px;
-    padding: 12px 0px 40px 16px;
+    padding: 12px 0px 32px 16px;
   }
   .kaomojibutton {
     margin-right: 16px;

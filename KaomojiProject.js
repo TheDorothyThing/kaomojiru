@@ -1,10 +1,10 @@
 //Snackbar Animation
 function snackbarAnimation(){
     document.getElementById("snackbar").animate([
-        {opacity: '0%', bottom: '0px', offset: 0,  easing: 'ease-in-out'},
-        {opacity: '100%', bottom: '8px', offset: 0.3},
-        {opacity: '100%', bottom: '8px', offset: 0.85},
-        {opacity: '0%', bottom: '8px', offset: 1},
+        {opacity: '0%', bottom: '120px', offset: 0,  easing: 'ease-in-out'},
+        {opacity: '100%', bottom: '128px', offset: 0.3},
+        {opacity: '100%', bottom: '128px', offset: 0.85},
+        {opacity: '0%', bottom: '128px', offset: 1},
     ],  1000)
 };
 
