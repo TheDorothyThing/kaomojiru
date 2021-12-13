@@ -184,6 +184,7 @@ body::-webkit-scrollbar {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     background-color: #F8F8F8;
+    color: #000000;
     z-index: 1;
 }
 
@@ -199,6 +200,7 @@ body::-webkit-scrollbar {
     margin-top: 92px;
     padding: 20px 0 40px 24px;
     font-size: 16px;
+    color: #000000;
     flex-wrap: wrap;
     justify-content: flex-start;
     overflow: auto;
