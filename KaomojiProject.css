@@ -1,10 +1,8 @@
 body {
   background-color: #F8F8F8;
-  font-family: "Source Sans Pro";
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+  font-family: "Lexend Deca";
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 body::-webkit-scrollbar {
@@ -14,19 +12,10 @@ body::-webkit-scrollbar {
 #sidebar {
   position: fixed;
   width: 260px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   z-index: 2;
   background-color: #F8F8F8;
 }
@@ -35,15 +24,9 @@ body::-webkit-scrollbar {
   min-height: 160px;
   min-width: 160px;
   margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #FFFFFF;
   border-radius: 48px;
 }
@@ -68,25 +51,18 @@ body::-webkit-scrollbar {
   font-size: 15px;
   padding: 16px 24px;
   margin-top: 32px;
-  background-color: #FFFFFF96;
+  background-color: rgba(255, 255, 255, 0.5882352941);
   border-radius: 12px;
 }
 
 #inputarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   margin-top: 32px;
   margin-bottom: 108px;
-  background-color: #FFFFFF96;
+  background-color: rgba(255, 255, 255, 0.5882352941);
   border-radius: 12px;
 }
 
@@ -106,17 +82,7 @@ body::-webkit-scrollbar {
   cursor: text;
 }
 
-#inputtext::-webkit-input-placeholder {
-  color: #B1B1B1;
-  font-size: 15px;
-}
-
-#inputtext:-ms-input-placeholder {
-  color: #B1B1B1;
-  font-size: 15px;
-}
-
-#inputtext::-ms-input-placeholder {
+#inputtext::-moz-placeholder {
   color: #B1B1B1;
   font-size: 15px;
 }
@@ -126,15 +92,7 @@ body::-webkit-scrollbar {
   font-size: 15px;
 }
 
-#inputtext:focus::-webkit-input-placeholder {
-  color: #FFFFFF;
-}
-
-#inputtext:focus:-ms-input-placeholder {
-  color: #FFFFFF;
-}
-
-#inputtext:focus::-ms-input-placeholder {
+#inputtext:focus::-moz-placeholder {
   color: #FFFFFF;
 }
 
@@ -157,8 +115,7 @@ body::-webkit-scrollbar {
   background-color: #706C96;
   border: 1px solid #706C96;
   border-radius: 22px;
-  -webkit-transition: .18s;
-  transition: .18s;
+  transition: 0.18s;
   cursor: pointer;
 }
 
@@ -175,17 +132,10 @@ body::-webkit-scrollbar {
   position: fixed;
   margin-top: 681px;
   width: 260px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-start;
+  justify-content: center;
   z-index: 3;
 }
 
@@ -210,17 +160,10 @@ body::-webkit-scrollbar {
   height: 60px;
   width: 260px;
   margin-top: calc(100vh - 60px);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-end;
+  justify-content: center;
   padding-bottom: 44px;
   font-size: 14px;
   color: #404040;
@@ -232,80 +175,55 @@ body::-webkit-scrollbar {
   width: calc(100% - 260px);
   height: 100%;
   margin-left: 260px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #categorybuttonarea {
   position: fixed;
   width: calc(100% - 260px);
   height: 104px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 42px 0px 18px 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: nowrap;
+  align-items: center;
   overflow-y: scroll;
-  scrollbar-width: none;
-  /* Firefox */
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
   background-color: #F8F8F8;
   color: #000000;
   z-index: 1;
 }
 
-#categorybuttonarea::-webkit-scrollbar {
-  /* WebKit */
+#categorybuttonarea::-webkit-scrollbar { /* WebKit */
   width: 0;
   height: 0;
 }
 
 #kaomojibuttonarea-all {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-top: 92px;
   padding: 20px 0 40px 24px;
   font-size: 16px;
   color: #000000;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   overflow: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #kaomojibuttonarea-happy {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-top: 92px;
   padding: 20px 0 40px 24px;
   font-size: 16px;
   color: #000000;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   overflow: auto;
   padding-top: 0px;
   display: none;
@@ -313,17 +231,13 @@ body::-webkit-scrollbar {
 
 #kaomojibuttonarea-surprised {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-top: 92px;
   padding: 20px 0 40px 24px;
   font-size: 16px;
   color: #000000;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   overflow: auto;
   padding-top: 0px;
   display: none;
@@ -331,17 +245,13 @@ body::-webkit-scrollbar {
 
 #kaomojibuttonarea-angry {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-top: 92px;
   padding: 20px 0 40px 24px;
   font-size: 16px;
   color: #000000;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   overflow: auto;
   padding-top: 0px;
   display: none;
@@ -349,17 +259,13 @@ body::-webkit-scrollbar {
 
 #kaomojibuttonarea-sad {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-top: 92px;
   padding: 20px 0 40px 24px;
   font-size: 16px;
   color: #000000;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   overflow: auto;
   padding-top: 0px;
   display: none;
@@ -367,17 +273,13 @@ body::-webkit-scrollbar {
 
 #kaomojibuttonarea-action {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-top: 92px;
   padding: 20px 0 40px 24px;
   font-size: 16px;
   color: #000000;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   overflow: auto;
   padding-top: 0px;
   display: none;
@@ -394,39 +296,31 @@ body::-webkit-scrollbar {
   padding: 0px 20px;
   margin-right: 20px;
   white-space: nowrap;
+  font-family: "Lexend Deca";
   font-size: 16px;
   font-weight: 400;
   color: #000000;
   border: 1px solid #F4AB08;
   border-radius: 16px;
   background-color: #FFFFFF;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition: .18s;
-  transition: .18s;
+  transition-timing-function: ease-in-out;
+  transition: 0.18s;
   cursor: pointer;
 }
-
 #categorybutton-all:hover {
-  background-color: #F4AB0820;
+  background-color: rgba(244, 171, 8, 0.1254901961);
 }
-
 #categorybutton-all:active {
   background-color: #F4AB08;
   color: #ffffff;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition: .1s;
-  transition: .1s;
+  transition-timing-function: ease;
+  transition: 0.1s;
 }
-
 #categorybutton-all:disabled {
   background-color: #F4AB08;
   color: #ffffff;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition: .1s;
-  transition: .1s;
+  transition-timing-function: ease;
+  transition: 0.1s;
 }
 
 #categorybutton-happy {
@@ -434,39 +328,31 @@ body::-webkit-scrollbar {
   padding: 0px 20px;
   margin-right: 20px;
   white-space: nowrap;
+  font-family: "Lexend Deca";
   font-size: 16px;
   font-weight: 400;
   color: #000000;
   border: 1px solid #F4AB08;
   border-radius: 16px;
   background-color: #FFFFFF;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition: .18s;
-  transition: .18s;
+  transition-timing-function: ease-in-out;
+  transition: 0.18s;
   cursor: pointer;
 }
-
 #categorybutton-happy:hover {
-  background-color: #F4AB0820;
+  background-color: rgba(244, 171, 8, 0.1254901961);
 }
-
 #categorybutton-happy:active {
   background-color: #F4AB08;
   color: #ffffff;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition: .1s;
-  transition: .1s;
+  transition-timing-function: ease;
+  transition: 0.1s;
 }
-
 #categorybutton-happy:disabled {
   background-color: #F4AB08;
   color: #ffffff;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition: .1s;
-  transition: .1s;
+  transition-timing-function: ease;
+  transition: 0.1s;
 }
 
 #categorybutton-surprised {
@@ -474,39 +360,31 @@ body::-webkit-scrollbar {
   padding: 0px 20px;
   margin-right: 20px;
   white-space: nowrap;
+  font-family: "Lexend Deca";
   font-size: 16px;
   font-weight: 400;
   color: #000000;
   border: 1px solid #F4AB08;
   border-radius: 16px;
   background-color: #FFFFFF;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition: .18s;
-  transition: .18s;
+  transition-timing-function: ease-in-out;
+  transition: 0.18s;
   cursor: pointer;
 }
-
 #categorybutton-surprised:hover {
-  background-color: #F4AB0820;
+  background-color: rgba(244, 171, 8, 0.1254901961);
 }
-
 #categorybutton-surprised:active {
   background-color: #F4AB08;
   color: #ffffff;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition: .1s;
-  transition: .1s;
+  transition-timing-function: ease;
+  transition: 0.1s;
 }
-
 #categorybutton-surprised:disabled {
   background-color: #F4AB08;
   color: #ffffff;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition: .1s;
-  transition: .1s;
+  transition-timing-function: ease;
+  transition: 0.1s;
 }
 
 #categorybutton-angry {
@@ -514,39 +392,31 @@ body::-webkit-scrollbar {
   padding: 0px 20px;
   margin-right: 20px;
   white-space: nowrap;
+  font-family: "Lexend Deca";
   font-size: 16px;
   font-weight: 400;
   color: #000000;
   border: 1px solid #F4AB08;
   border-radius: 16px;
   background-color: #FFFFFF;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition: .18s;
-  transition: .18s;
+  transition-timing-function: ease-in-out;
+  transition: 0.18s;
   cursor: pointer;
 }
-
 #categorybutton-angry:hover {
-  background-color: #F4AB0820;
+  background-color: rgba(244, 171, 8, 0.1254901961);
 }
-
 #categorybutton-angry:active {
   background-color: #F4AB08;
   color: #ffffff;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition: .1s;
-  transition: .1s;
+  transition-timing-function: ease;
+  transition: 0.1s;
 }
-
 #categorybutton-angry:disabled {
   background-color: #F4AB08;
   color: #ffffff;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition: .1s;
-  transition: .1s;
+  transition-timing-function: ease;
+  transition: 0.1s;
 }
 
 #categorybutton-sad {
@@ -554,39 +424,31 @@ body::-webkit-scrollbar {
   padding: 0px 20px;
   margin-right: 20px;
   white-space: nowrap;
+  font-family: "Lexend Deca";
   font-size: 16px;
   font-weight: 400;
   color: #000000;
   border: 1px solid #F4AB08;
   border-radius: 16px;
   background-color: #FFFFFF;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition: .18s;
-  transition: .18s;
+  transition-timing-function: ease-in-out;
+  transition: 0.18s;
   cursor: pointer;
 }
-
 #categorybutton-sad:hover {
-  background-color: #F4AB0820;
+  background-color: rgba(244, 171, 8, 0.1254901961);
 }
-
 #categorybutton-sad:active {
   background-color: #F4AB08;
   color: #ffffff;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition: .1s;
-  transition: .1s;
+  transition-timing-function: ease;
+  transition: 0.1s;
 }
-
 #categorybutton-sad:disabled {
   background-color: #F4AB08;
   color: #ffffff;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition: .1s;
-  transition: .1s;
+  transition-timing-function: ease;
+  transition: 0.1s;
 }
 
 #categorybutton-action {
@@ -594,39 +456,31 @@ body::-webkit-scrollbar {
   padding: 0px 20px;
   margin-right: 20px;
   white-space: nowrap;
+  font-family: "Lexend Deca";
   font-size: 16px;
   font-weight: 400;
   color: #000000;
   border: 1px solid #F4AB08;
   border-radius: 16px;
   background-color: #FFFFFF;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition: .18s;
-  transition: .18s;
+  transition-timing-function: ease-in-out;
+  transition: 0.18s;
   cursor: pointer;
 }
-
 #categorybutton-action:hover {
-  background-color: #F4AB0820;
+  background-color: rgba(244, 171, 8, 0.1254901961);
 }
-
 #categorybutton-action:active {
   background-color: #F4AB08;
   color: #ffffff;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition: .1s;
-  transition: .1s;
+  transition-timing-function: ease;
+  transition: 0.1s;
 }
-
 #categorybutton-action:disabled {
   background-color: #F4AB08;
   color: #ffffff;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition: .1s;
-  transition: .1s;
+  transition-timing-function: ease;
+  transition: 0.1s;
 }
 
 .kaomojibutton {
@@ -642,37 +496,29 @@ body::-webkit-scrollbar {
   border: 1px solid #CFCDE5;
   border-radius: 16px;
   background-color: #FFFFFF;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition: .18s;
-  transition: .18s;
+  transition-timing-function: ease-in-out;
+  transition: 0.18s;
   cursor: pointer;
 }
 
 .kaomojibutton:hover {
-  background-color: #CFCDE520;
+  background-color: rgba(207, 205, 229, 0.1254901961);
 }
 
 .kaomojibutton:active {
   background-color: #706C96;
   border: 1px solid #706C96;
   color: #ffffff;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition: .1s;
-  transition: .1s;
+  transition-timing-function: ease;
+  transition: 0.1s;
 }
 
 #copyright-rwd {
   height: 40px;
   width: 100%;
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding-bottom: 20px;
   font-size: 14px;
   color: #404040;
@@ -683,28 +529,17 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 64px;
     padding-top: 8px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    align-items: center;
   }
   #logo {
     min-height: 48px;
     min-width: 48px;
     margin-top: 0px;
     margin-left: 16px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px;
   }
   #logo-big {
@@ -734,12 +569,8 @@ body::-webkit-scrollbar {
     margin-top: 100vh;
     padding-top: 0px;
     padding-bottom: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
   }
   #snackbar {
     margin-top: 0px;
@@ -748,8 +579,6 @@ body::-webkit-scrollbar {
     display: none;
   }
   #copyright-rwd {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #buttonarea {
@@ -791,10 +620,8 @@ body::-webkit-scrollbar {
     margin-bottom: 16px;
   }
 }
-
 @media screen and (max-width: 360px) {
   #description {
     display: none;
   }
-}
-/*# sourceMappingURL=KaomojiProject.css.map */
+}/*# sourceMappingURL=KaomojiProject.css.map */
