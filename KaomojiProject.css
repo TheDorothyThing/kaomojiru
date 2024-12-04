@@ -41,13 +41,13 @@ body::-webkit-scrollbar {
 }
 
 #sidebar h1 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   margin-top: 16px;
 }
 
 #description {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 15px;
   padding: 16px 24px;
   margin-top: 32px;
@@ -68,6 +68,7 @@ body::-webkit-scrollbar {
 
 #inputdescription {
   font-size: 15px;
+  font-weight: 300;
   text-align: center;
   line-height: 1.4;
 }
@@ -84,12 +85,16 @@ body::-webkit-scrollbar {
 
 #inputtext::-moz-placeholder {
   color: #B1B1B1;
+  font-family: "Lexend Deca";
   font-size: 15px;
+  font-weight: 300;
 }
 
 #inputtext::placeholder {
   color: #B1B1B1;
+  font-family: "Lexend Deca";
   font-size: 15px;
+  font-weight: 300;
 }
 
 #inputtext:focus::-moz-placeholder {
@@ -109,8 +114,9 @@ body::-webkit-scrollbar {
   margin: 20px 0 4px 0;
   height: 44px;
   width: 160px;
+  font-family: "Lexend Deca";
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 300;
   color: #FFFFFF;
   background-color: #706C96;
   border: 1px solid #706C96;
@@ -146,8 +152,9 @@ body::-webkit-scrollbar {
   height: 48px;
   width: 160px;
   border-radius: 12px;
+  font-family: "Lexend Deca";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   line-height: 48px;
   color: #FFFFFF;
@@ -166,6 +173,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   padding-bottom: 44px;
   font-size: 14px;
+  font-weight: 300;
   color: #404040;
   z-index: 1;
 }
@@ -298,7 +306,7 @@ body::-webkit-scrollbar {
   white-space: nowrap;
   font-family: "Lexend Deca";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: #000000;
   border: 1px solid #F4AB08;
   border-radius: 16px;
@@ -330,7 +338,7 @@ body::-webkit-scrollbar {
   white-space: nowrap;
   font-family: "Lexend Deca";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: #000000;
   border: 1px solid #F4AB08;
   border-radius: 16px;
@@ -362,7 +370,7 @@ body::-webkit-scrollbar {
   white-space: nowrap;
   font-family: "Lexend Deca";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: #000000;
   border: 1px solid #F4AB08;
   border-radius: 16px;
@@ -394,7 +402,7 @@ body::-webkit-scrollbar {
   white-space: nowrap;
   font-family: "Lexend Deca";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: #000000;
   border: 1px solid #F4AB08;
   border-radius: 16px;
@@ -426,7 +434,7 @@ body::-webkit-scrollbar {
   white-space: nowrap;
   font-family: "Lexend Deca";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: #000000;
   border: 1px solid #F4AB08;
   border-radius: 16px;
@@ -458,7 +466,7 @@ body::-webkit-scrollbar {
   white-space: nowrap;
   font-family: "Lexend Deca";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: #000000;
   border: 1px solid #F4AB08;
   border-radius: 16px;
@@ -490,8 +498,9 @@ body::-webkit-scrollbar {
   margin-right: 20px;
   margin-bottom: 20px;
   white-space: nowrap;
+  font-family: "Lexend Deca";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: #000000;
   border: 1px solid #CFCDE5;
   border-radius: 16px;
