@@ -50,8 +50,8 @@ body::-webkit-scrollbar {
 
 #description {
   font-weight: 300;
-  font-size: 15px;
-  padding: 16px 24px;
+  font-size: 13px;
+  padding: 16px 16px;
   margin-top: 32px;
   background-color: rgba(47, 47, 47, 0.5882352941);
   color: #FFFFFF;
@@ -62,7 +62,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 16px;
   margin-top: 32px;
   margin-bottom: 108px;
   background-color: rgba(47, 47, 47, 0.5882352941);
@@ -70,7 +70,7 @@ body::-webkit-scrollbar {
 }
 
 #inputdescription {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 300;
   text-align: center;
   line-height: 1.4;
@@ -305,9 +305,9 @@ body::-webkit-scrollbar {
 }
 
 #categorybutton-all {
-  height: 44px;
-  padding: 0px 20px;
-  margin-right: 20px;
+  height: 40px;
+  padding: 0px 16px;
+  margin-right: 8px;
   white-space: nowrap;
   font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
@@ -325,21 +325,21 @@ body::-webkit-scrollbar {
 }
 #categorybutton-all:active {
   background-color: #F4AB08;
-  color: #ffffff;
+  color: #FFFFFF;
   transition-timing-function: ease;
   transition: 0.1s;
 }
 #categorybutton-all:disabled {
   background-color: #F4AB08;
-  color: #ffffff;
+  color: #000000;
   transition-timing-function: ease;
   transition: 0.1s;
 }
 
 #categorybutton-happy {
-  height: 44px;
-  padding: 0px 20px;
-  margin-right: 20px;
+  height: 40px;
+  padding: 0px 16px;
+  margin-right: 8px;
   white-space: nowrap;
   font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
@@ -357,21 +357,21 @@ body::-webkit-scrollbar {
 }
 #categorybutton-happy:active {
   background-color: #F4AB08;
-  color: #ffffff;
+  color: #FFFFFF;
   transition-timing-function: ease;
   transition: 0.1s;
 }
 #categorybutton-happy:disabled {
   background-color: #F4AB08;
-  color: #ffffff;
+  color: #000000;
   transition-timing-function: ease;
   transition: 0.1s;
 }
 
 #categorybutton-surprised {
-  height: 44px;
-  padding: 0px 20px;
-  margin-right: 20px;
+  height: 40px;
+  padding: 0px 16px;
+  margin-right: 8px;
   white-space: nowrap;
   font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
@@ -389,21 +389,21 @@ body::-webkit-scrollbar {
 }
 #categorybutton-surprised:active {
   background-color: #F4AB08;
-  color: #ffffff;
+  color: #FFFFFF;
   transition-timing-function: ease;
   transition: 0.1s;
 }
 #categorybutton-surprised:disabled {
   background-color: #F4AB08;
-  color: #ffffff;
+  color: #000000;
   transition-timing-function: ease;
   transition: 0.1s;
 }
 
 #categorybutton-angry {
-  height: 44px;
-  padding: 0px 20px;
-  margin-right: 20px;
+  height: 40px;
+  padding: 0px 16px;
+  margin-right: 8px;
   white-space: nowrap;
   font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
@@ -421,21 +421,21 @@ body::-webkit-scrollbar {
 }
 #categorybutton-angry:active {
   background-color: #F4AB08;
-  color: #ffffff;
+  color: #FFFFFF;
   transition-timing-function: ease;
   transition: 0.1s;
 }
 #categorybutton-angry:disabled {
   background-color: #F4AB08;
-  color: #ffffff;
+  color: #000000;
   transition-timing-function: ease;
   transition: 0.1s;
 }
 
 #categorybutton-sad {
-  height: 44px;
-  padding: 0px 20px;
-  margin-right: 20px;
+  height: 40px;
+  padding: 0px 16px;
+  margin-right: 8px;
   white-space: nowrap;
   font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
@@ -453,21 +453,21 @@ body::-webkit-scrollbar {
 }
 #categorybutton-sad:active {
   background-color: #F4AB08;
-  color: #ffffff;
+  color: #FFFFFF;
   transition-timing-function: ease;
   transition: 0.1s;
 }
 #categorybutton-sad:disabled {
   background-color: #F4AB08;
-  color: #ffffff;
+  color: #000000;
   transition-timing-function: ease;
   transition: 0.1s;
 }
 
 #categorybutton-action {
-  height: 44px;
-  padding: 0px 20px;
-  margin-right: 20px;
+  height: 40px;
+  padding: 0px 16px;
+  margin-right: 8px;
   white-space: nowrap;
   font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
@@ -485,23 +485,23 @@ body::-webkit-scrollbar {
 }
 #categorybutton-action:active {
   background-color: #F4AB08;
-  color: #ffffff;
+  color: #FFFFFF;
   transition-timing-function: ease;
   transition: 0.1s;
 }
 #categorybutton-action:disabled {
   background-color: #F4AB08;
-  color: #ffffff;
+  color: #000000;
   transition-timing-function: ease;
   transition: 0.1s;
 }
 
 .kaomojibutton {
   display: inline-block;
-  height: 44px;
-  padding: 0px 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  height: 40px;
+  padding: 0px 16px;
+  margin-right: 6px;
+  margin-bottom: 8px;
   white-space: nowrap;
   font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
@@ -571,7 +571,7 @@ body::-webkit-scrollbar {
   }
   #description {
     margin-top: 0px;
-    margin-left: calc(100% - 357px);
+    margin-left: calc(100% - 392px);
     white-space: nowrap;
     padding: 12px;
   }

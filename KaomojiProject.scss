@@ -50,8 +50,8 @@ body::-webkit-scrollbar {
 
 #description{
     font-weight: 300;
-    font-size: 15px;
-    padding: 16px 24px;
+    font-size: 13px;
+    padding: 16px 16px;
     margin-top: 32px;
     background-color: #2F2F2F96;
     color: #FFFFFF;
@@ -62,7 +62,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 16px;
     margin-top: 32px;
     margin-bottom: 108px;
     background-color: #2F2F2F96;
@@ -70,7 +70,7 @@ body::-webkit-scrollbar {
 }
 
 #inputdescription{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     text-align: center;
     line-height: 1.4;
@@ -259,9 +259,9 @@ body::-webkit-scrollbar {
 }
 
 @mixin categorybutton{
-    height: 44px;
-    padding: 0px 20px;
-    margin-right: 20px;
+    height: 40px;
+    padding: 0px 16px;
+    margin-right: 8px;
     white-space: nowrap;
     font-family: "Lexend Deca","Source Sans Pro";
     font-size: 16px;
@@ -278,13 +278,13 @@ body::-webkit-scrollbar {
     }
     &:active{
         background-color: #F4AB08;
-        color: #ffffff;
+        color: #FFFFFF;
         transition-timing-function: ease;
         transition: .1s;
     }
     &:disabled{
         background-color: #F4AB08;
-        color: #ffffff;
+        color: #000000;
         transition-timing-function: ease;
         transition: .1s;
     }
@@ -316,10 +316,10 @@ body::-webkit-scrollbar {
 
 .kaomojibutton{
     display: inline-block;
-    height: 44px;
-    padding: 0px 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    height: 40px;
+    padding: 0px 16px;
+    margin-right: 6px;
+    margin-bottom: 8px;
     white-space: nowrap;
     font-family: "Lexend Deca","Source Sans Pro";
     font-size: 16px;
@@ -394,7 +394,7 @@ body::-webkit-scrollbar {
 
     #description{
         margin-top: 0px;
-        margin-left: calc(100% - 357px);
+        margin-left: calc(100% - 392px);
         white-space: nowrap;
         padding: 12px;
     }
