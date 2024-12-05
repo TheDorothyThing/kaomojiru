@@ -1,6 +1,6 @@
 body {
-  background-color: #F8F8F8;
-  font-family: "Lexend Deca";
+  background-color: #252525;
+  font-family: "Lexend Deca", "Source Sans Pro";
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -17,7 +17,8 @@ body::-webkit-scrollbar {
   justify-content: flex-start;
   align-items: center;
   z-index: 2;
-  background-color: #F8F8F8;
+  background-color: #252525;
+  color: #FFFFFF;
 }
 
 #logo {
@@ -27,7 +28,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #2F2F2F;
   border-radius: 48px;
 }
 
@@ -43,6 +44,7 @@ body::-webkit-scrollbar {
 #sidebar h1 {
   font-weight: 500;
   font-size: 20px;
+  color: #FFFFFF;
   margin-top: 16px;
 }
 
@@ -51,7 +53,8 @@ body::-webkit-scrollbar {
   font-size: 15px;
   padding: 16px 24px;
   margin-top: 32px;
-  background-color: rgba(255, 255, 255, 0.5882352941);
+  background-color: rgba(47, 47, 47, 0.5882352941);
+  color: #FFFFFF;
   border-radius: 12px;
 }
 
@@ -62,7 +65,7 @@ body::-webkit-scrollbar {
   padding: 20px;
   margin-top: 32px;
   margin-bottom: 108px;
-  background-color: rgba(255, 255, 255, 0.5882352941);
+  background-color: rgba(47, 47, 47, 0.5882352941);
   border-radius: 12px;
 }
 
@@ -78,31 +81,33 @@ body::-webkit-scrollbar {
   width: 160px;
   margin-top: 20px;
   border-radius: 20px;
-  border: 1px solid #CFCDE5;
+  border: 1px solid rgba(207, 205, 229, 0.1254901961);
+  background-color: #2F2F2F;
+  color: #FFFFFF;
   text-align: center;
   cursor: text;
 }
 
 #inputtext::-moz-placeholder {
-  color: #B1B1B1;
-  font-family: "Lexend Deca";
+  color: #525252;
+  font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 15px;
   font-weight: 300;
 }
 
 #inputtext::placeholder {
-  color: #B1B1B1;
-  font-family: "Lexend Deca";
+  color: #525252;
+  font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 15px;
   font-weight: 300;
 }
 
 #inputtext:focus::-moz-placeholder {
-  color: #FFFFFF;
+  color: #525252;
 }
 
 #inputtext:focus::placeholder {
-  color: #FFFFFF;
+  color: #525252;
 }
 
 #inputtext:focus {
@@ -114,7 +119,7 @@ body::-webkit-scrollbar {
   margin: 20px 0 4px 0;
   height: 44px;
   width: 160px;
-  font-family: "Lexend Deca";
+  font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 15px;
   font-weight: 300;
   color: #FFFFFF;
@@ -152,7 +157,7 @@ body::-webkit-scrollbar {
   height: 48px;
   width: 160px;
   border-radius: 12px;
-  font-family: "Lexend Deca";
+  font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
   font-weight: 300;
   text-align: center;
@@ -174,7 +179,7 @@ body::-webkit-scrollbar {
   padding-bottom: 44px;
   font-size: 14px;
   font-weight: 300;
-  color: #404040;
+  color: #7F7F7F;
   z-index: 1;
 }
 
@@ -200,8 +205,8 @@ body::-webkit-scrollbar {
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
-  background-color: #F8F8F8;
-  color: #000000;
+  background-color: #252525;
+  color: #FFFFFF;
   z-index: 1;
 }
 
@@ -216,7 +221,7 @@ body::-webkit-scrollbar {
   margin-top: 92px;
   padding: 20px 0 40px 24px;
   font-size: 16px;
-  color: #000000;
+  color: #FFFFFF;
   flex-wrap: wrap;
   justify-content: flex-start;
   overflow: auto;
@@ -229,7 +234,7 @@ body::-webkit-scrollbar {
   margin-top: 92px;
   padding: 20px 0 40px 24px;
   font-size: 16px;
-  color: #000000;
+  color: #FFFFFF;
   flex-wrap: wrap;
   justify-content: flex-start;
   overflow: auto;
@@ -243,7 +248,7 @@ body::-webkit-scrollbar {
   margin-top: 92px;
   padding: 20px 0 40px 24px;
   font-size: 16px;
-  color: #000000;
+  color: #FFFFFF;
   flex-wrap: wrap;
   justify-content: flex-start;
   overflow: auto;
@@ -257,7 +262,7 @@ body::-webkit-scrollbar {
   margin-top: 92px;
   padding: 20px 0 40px 24px;
   font-size: 16px;
-  color: #000000;
+  color: #FFFFFF;
   flex-wrap: wrap;
   justify-content: flex-start;
   overflow: auto;
@@ -271,7 +276,7 @@ body::-webkit-scrollbar {
   margin-top: 92px;
   padding: 20px 0 40px 24px;
   font-size: 16px;
-  color: #000000;
+  color: #FFFFFF;
   flex-wrap: wrap;
   justify-content: flex-start;
   overflow: auto;
@@ -285,7 +290,7 @@ body::-webkit-scrollbar {
   margin-top: 92px;
   padding: 20px 0 40px 24px;
   font-size: 16px;
-  color: #000000;
+  color: #FFFFFF;
   flex-wrap: wrap;
   justify-content: flex-start;
   overflow: auto;
@@ -304,13 +309,13 @@ body::-webkit-scrollbar {
   padding: 0px 20px;
   margin-right: 20px;
   white-space: nowrap;
-  font-family: "Lexend Deca";
+  font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
   font-weight: 300;
-  color: #000000;
-  border: 1px solid #F4AB08;
+  color: #FFFFFF;
+  border: 1px solid rgba(244, 171, 8, 0.1254901961);
   border-radius: 16px;
-  background-color: #FFFFFF;
+  background-color: #2F2F2F;
   transition-timing-function: ease-in-out;
   transition: 0.18s;
   cursor: pointer;
@@ -336,13 +341,13 @@ body::-webkit-scrollbar {
   padding: 0px 20px;
   margin-right: 20px;
   white-space: nowrap;
-  font-family: "Lexend Deca";
+  font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
   font-weight: 300;
-  color: #000000;
-  border: 1px solid #F4AB08;
+  color: #FFFFFF;
+  border: 1px solid rgba(244, 171, 8, 0.1254901961);
   border-radius: 16px;
-  background-color: #FFFFFF;
+  background-color: #2F2F2F;
   transition-timing-function: ease-in-out;
   transition: 0.18s;
   cursor: pointer;
@@ -368,13 +373,13 @@ body::-webkit-scrollbar {
   padding: 0px 20px;
   margin-right: 20px;
   white-space: nowrap;
-  font-family: "Lexend Deca";
+  font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
   font-weight: 300;
-  color: #000000;
-  border: 1px solid #F4AB08;
+  color: #FFFFFF;
+  border: 1px solid rgba(244, 171, 8, 0.1254901961);
   border-radius: 16px;
-  background-color: #FFFFFF;
+  background-color: #2F2F2F;
   transition-timing-function: ease-in-out;
   transition: 0.18s;
   cursor: pointer;
@@ -400,13 +405,13 @@ body::-webkit-scrollbar {
   padding: 0px 20px;
   margin-right: 20px;
   white-space: nowrap;
-  font-family: "Lexend Deca";
+  font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
   font-weight: 300;
-  color: #000000;
-  border: 1px solid #F4AB08;
+  color: #FFFFFF;
+  border: 1px solid rgba(244, 171, 8, 0.1254901961);
   border-radius: 16px;
-  background-color: #FFFFFF;
+  background-color: #2F2F2F;
   transition-timing-function: ease-in-out;
   transition: 0.18s;
   cursor: pointer;
@@ -432,13 +437,13 @@ body::-webkit-scrollbar {
   padding: 0px 20px;
   margin-right: 20px;
   white-space: nowrap;
-  font-family: "Lexend Deca";
+  font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
   font-weight: 300;
-  color: #000000;
-  border: 1px solid #F4AB08;
+  color: #FFFFFF;
+  border: 1px solid rgba(244, 171, 8, 0.1254901961);
   border-radius: 16px;
-  background-color: #FFFFFF;
+  background-color: #2F2F2F;
   transition-timing-function: ease-in-out;
   transition: 0.18s;
   cursor: pointer;
@@ -464,13 +469,13 @@ body::-webkit-scrollbar {
   padding: 0px 20px;
   margin-right: 20px;
   white-space: nowrap;
-  font-family: "Lexend Deca";
+  font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
   font-weight: 300;
-  color: #000000;
-  border: 1px solid #F4AB08;
+  color: #FFFFFF;
+  border: 1px solid rgba(244, 171, 8, 0.1254901961);
   border-radius: 16px;
-  background-color: #FFFFFF;
+  background-color: #2F2F2F;
   transition-timing-function: ease-in-out;
   transition: 0.18s;
   cursor: pointer;
@@ -498,13 +503,13 @@ body::-webkit-scrollbar {
   margin-right: 20px;
   margin-bottom: 20px;
   white-space: nowrap;
-  font-family: "Lexend Deca";
+  font-family: "Lexend Deca", "Source Sans Pro";
   font-size: 16px;
   font-weight: 300;
-  color: #000000;
-  border: 1px solid #CFCDE5;
+  color: #FFFFFF;
+  border: 1px solid rgba(207, 205, 229, 0.1254901961);
   border-radius: 16px;
-  background-color: #FFFFFF;
+  background-color: #2F2F2F;
   transition-timing-function: ease-in-out;
   transition: 0.18s;
   cursor: pointer;
@@ -530,7 +535,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   padding-bottom: 20px;
   font-size: 14px;
-  color: #404040;
+  color: #7F7F7F;
 }
 
 @media screen and (max-width: 540px) {
