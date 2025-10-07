@@ -9,12 +9,20 @@ function snackbarAnimation(){
 };
 
 window.onload = function(){
-document.getElementById("categorybutton-all").disabled = true;
-document.getElementById("copyinput").addEventListener('click', snackbarAnimation);
-const kaomojibuttononclick = document.getElementsByClassName("kaomojibutton");
+// Disable the "all" button initially
+    document.getElementById("categorybutton-all").disabled = true;
+
+// Add event listener for copy input
+    document.getElementById("copyinput").addEventListener('click', snackbarAnimation);
+
+// Categories and their associated button/area IDs
+    const kaomojibuttononclick = document.getElementsByClassName("kaomojibutton");
+
+
 for (var i = 0 ; i < kaomojibuttononclick.length; i++) {
-    kaomojibuttononclick[i].addEventListener('click' , snackbarAnimation , false ) ; 
+    kaomojibuttononclick[i].addEventListener('click', snackbarAnimation, false) ; 
  }
+
  document.getElementById("categorybutton-all").addEventListener('click',function(){
     document.getElementById("kaomojibuttonarea-all").style.display = "flex";
     document.getElementById("kaomojibuttonarea-happy").style.display = "none";
@@ -101,3 +109,15 @@ document.getElementById("categorybutton-action").addEventListener('click',functi
 })
 }
 
+//Arrays of facial features
+const leftFace = ["("];
+const rightFace = [")"];
+const leftArm = ["⸜","ヽ","ฅ","ᐠ"];
+const rightArm = ["⸝","ﾉ","ฅ","ᐟ"];
+const blush = ["๑","𓏸","｡","⸝⸝⸝","៸៸","៸៸៸៸","˶","◍"];
+const leftBrow = ["ˊ"]
+const rightBrow = ["ˋ"]
+const leftEye = ["･","•","°","'","ㆁ","❛","•́","･̑","-","￣","ˊ","˘"];
+const rightEye = ["･","•","°","'","ㆁ","❛","•̀","･̑","-","￣","ˋ","˘"];
+const mouthHappy = ["ᴗ","ᵕ","∀","ᗜ","ᗨ","ꇴ","ㅂ","ω","꒳","⌄","༥"];
+const mouthSurprised = ["-","⌓","ㅁ","口","ﾛ","Д","△","A","ᯅ","ࡇ","。"," н ","﹏"];
