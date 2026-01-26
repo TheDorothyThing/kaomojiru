@@ -108,16 +108,3 @@ document.getElementById("categorybutton-action").addEventListener('click',functi
     document.getElementById("categorybutton-action").disabled = true;
 })
 }
-
-//Arrays of facial features
-const leftFace = ["("];
-const rightFace = [")"];
-const leftArm = ["⸜","ヽ","ฅ","ᐠ"];
-const rightArm = ["⸝","ﾉ","ฅ","ᐟ"];
-const blush = ["๑","𓏸","｡","⸝⸝⸝","៸៸","៸៸៸៸","˶","◍"];
-const leftBrow = ["ˊ"]
-const rightBrow = ["ˋ"]
-const leftEye = ["･","•","°","'","ㆁ","❛","•́","･̑","-","￣","ˊ","˘"];
-const rightEye = ["･","•","°","'","ㆁ","❛","•̀","･̑","-","￣","ˋ","˘"];
-const mouthHappy = ["ᴗ","ᵕ","∀","ᗜ","ᗨ","ꇴ","ㅂ","ω","꒳","⌄","༥"];
-const mouthSurprised = ["-","⌓","ㅁ","口","ﾛ","Д","△","A","ᯅ","ࡇ","。"," н ","﹏"];
