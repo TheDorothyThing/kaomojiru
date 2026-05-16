@@ -64,9 +64,70 @@ body::-webkit-scrollbar {
     align-items: center;
     padding: 16px;
     margin-top: 32px;
-    margin-bottom: 108px;
+    margin-bottom: 16px;
     background-color: #2F2F2F96;
     border-radius: 12px;
+}
+
+#darkmodetoggle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    margin-bottom: 76px;
+    min-width: 160px;
+    background-color: #2F2F2F96;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.toggle-switch{
+    position: relative;
+    display: flex;
+    width: 44px;
+    height: 24px;
+    flex-shrink: 0;
+
+    input{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+.toggle-slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #706C96;
+    border-radius: 24px;
+    transition: 0.18s;
+
+    &:before{
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        transition: 0.18s;
+    }
+}
+
+.toggle-switch input:checked + .toggle-slider:before{
+    transform: translateX(20px);
+}
+
+.toggle-switch input:not(:checked) + .toggle-slider{
+    background-color: #525252;
 }
 
 #inputdescription{
@@ -393,14 +454,24 @@ body::-webkit-scrollbar {
     }
 
     #description{
-        margin-top: 0px;
-        margin-left: calc(100% - 392px);
-        white-space: nowrap;
-        padding: 12px;
+        display: none;
     }
 
     #inputarea{
         display: none;
+    }
+
+    #darkmodetoggle{
+        display: flex;
+        margin-left: auto;
+        margin-right: 16px;
+        margin-bottom: 0;
+        min-width: unset;
+        background-color: transparent;
+        border-radius: 0;
+        padding: 0;
+        gap: 16px;
+        justify-content: flex-start;
     }
 
     #snackbarcontainer{
@@ -475,5 +546,101 @@ body::-webkit-scrollbar {
 @media screen and (max-width:360px){
     #description{
         display: none;
+    }
+}
+
+body.light-mode{
+    background-color: #F8F8F8;
+
+    #sidebar{
+        background-color: #F8F8F8;
+        color: #000000;
+    }
+
+    #logo{
+        background-color: #FFFFFF;
+    }
+
+    #sidebar h1{
+        color: #000000;
+    }
+
+    #description{
+        background-color: #FFFFFF96;
+        color: #000000;
+    }
+
+    #inputarea{
+        background-color: #FFFFFF96;
+    }
+
+    #inputtext{
+        border: 1px solid #CFCDE5;
+        background-color: transparent;
+        color: #000000;
+    }
+
+    #inputtext::placeholder{
+        color: #B1B1B1;
+    }
+
+    #categorybuttonarea{
+        background-color: #F8F8F8;
+        color: #000000;
+    }
+
+    #kaomojibuttonarea-all,
+    #kaomojibuttonarea-happy,
+    #kaomojibuttonarea-surprised,
+    #kaomojibuttonarea-angry,
+    #kaomojibuttonarea-sad,
+    #kaomojibuttonarea-action{
+        color: #000000;
+    }
+
+    #categorybutton-all,
+    #categorybutton-happy,
+    #categorybutton-surprised,
+    #categorybutton-angry,
+    #categorybutton-sad,
+    #categorybutton-action{
+        background-color: #FFFFFF;
+        border-color: #F4AB08;
+        color: #000000;
+
+        &:hover{
+            background-color: #F4AB0820;
+        }
+
+        &:disabled{
+            background-color: #F4AB08;
+            color: #000000;
+        }
+    }
+
+    .kaomojibutton{
+        background-color: #FFFFFF;
+        border-color: #CFCDE5;
+        color: #000000;
+
+        &:hover{
+            background-color: #CFCDE520;
+        }
+    }
+
+    #copyright-default,
+    #copyright-rwd{
+        color: #404040;
+    }
+
+    #darkmodetoggle{
+        background-color: #FFFFFF96;
+        color: #000000;
+    }
+}
+
+@media screen and (max-width: 540px){
+    body.light-mode #darkmodetoggle{
+        background-color: transparent;
     }
 }
