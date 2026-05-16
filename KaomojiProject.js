@@ -1,10 +1,20 @@
 //Snackbar Animation
 function snackbarAnimation(){
-    document.getElementById("snackbar").animate([
-        {opacity: '0%', bottom: '120px', offset: 0,  easing: 'ease-in-out'},
-        {opacity: '100%', bottom: '128px', offset: 0.3},
-        {opacity: '100%', bottom: '128px', offset: 0.85},
-        {opacity: '0%', bottom: '128px', offset: 1},
+    const snackbar = document.getElementById("snackbar");
+    const toggle = document.getElementById("darkmodetoggle");
+    let bottomValue = 128;
+
+    if (toggle && getComputedStyle(toggle).display !== 'none') {
+        const snackbarNaturalTop = snackbar.getBoundingClientRect().top;
+        const toggleBottom = toggle.getBoundingClientRect().bottom;
+        bottomValue = snackbarNaturalTop - toggleBottom - 16;
+    }
+
+    snackbar.animate([
+        {opacity: '0%', bottom: (bottomValue - 8) + 'px', offset: 0,  easing: 'ease-in-out'},
+        {opacity: '100%', bottom: bottomValue + 'px', offset: 0.3},
+        {opacity: '100%', bottom: bottomValue + 'px', offset: 0.85},
+        {opacity: '0%', bottom: bottomValue + 'px', offset: 1},
     ],  1000)
 };
 
@@ -14,6 +24,24 @@ window.onload = function(){
 
 // Add event listener for copy input
     document.getElementById("copyinput").addEventListener('click', snackbarAnimation);
+
+// Dark mode toggle
+    const darkModeSwitch = document.getElementById("darkmodetoggle-switch");
+
+    if (localStorage.getItem('darkMode') === 'off') {
+        document.body.classList.add('light-mode');
+        darkModeSwitch.checked = false;
+    }
+
+    darkModeSwitch.addEventListener('change', function() {
+        if (this.checked) {
+            document.body.classList.remove('light-mode');
+            localStorage.setItem('darkMode', 'on');
+        } else {
+            document.body.classList.add('light-mode');
+            localStorage.setItem('darkMode', 'off');
+        }
+    });
 
 // Categories and their associated button/area IDs
     const kaomojibuttononclick = document.getElementsByClassName("kaomojibutton");
