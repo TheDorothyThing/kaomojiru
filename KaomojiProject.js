@@ -4,7 +4,11 @@ function snackbarAnimation(){
     const toggle = document.getElementById("darkmodetoggle");
     let bottomValue = 128;
 
-    if (toggle && getComputedStyle(toggle).display !== 'none') {
+    if (window.innerWidth <= 540) {
+        // On mobile the snackbar container sits at margin-top: 100vh.
+        // bottomValue of 88 lifts it to 40px above the viewport bottom (48px height + 40px gap).
+        bottomValue = 88;
+    } else if (toggle && getComputedStyle(toggle).display !== 'none') {
         const snackbarNaturalTop = snackbar.getBoundingClientRect().top;
         const toggleBottom = toggle.getBoundingClientRect().bottom;
         bottomValue = snackbarNaturalTop - toggleBottom - 16;

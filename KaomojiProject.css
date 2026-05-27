@@ -223,7 +223,7 @@ body::-webkit-scrollbar {
   font-weight: 300;
   text-align: center;
   line-height: 48px;
-  color: #FFFFFF;
+  color: #000000;
   background-color: #F4AB08;
   opacity: 0;
 }
